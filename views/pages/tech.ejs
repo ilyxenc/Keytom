@@ -1,0 +1,181 @@
+<%- include('../parts/head') %>
+
+<link type="text/css" rel="stylesheet" href="<%= link %>static/css/tech.css">
+
+<%- include('../parts/preloader') %>
+
+    <div class="topBlockMain">
+        <div class="videoBlock">
+            <video muted>
+                <!-- loop -->
+                <source src="<%= link %>static/media/video/08.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="topBlock tech">
+            <%- include('../parts/menu/pc.ejs') %>
+
+            <div class="topBlockText">
+                <div>
+                    <p class="h1">
+                        <%= __('pages').tech.topBlock.header %>
+                    </p>
+                    <p class="basicXL">
+                        <%- __('pages').tech.topBlock.description %>
+                    </p>
+                    <p class="basicMS" onclick="scrollToElement('next')">
+                        <%= __('pages').tech.topBlock.additionally %>
+                        <img src="<%= link %>static/media/images/arrow-top-down.svg" alt="">
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <%- include('../parts/menu/mobile.ejs') %>
+    </div>
+
+    <div id="next" class="tech">
+        <%- include('../parts/menu/pc-sticky.ejs') %>
+        <%- include('../parts/menu/mobile-sticky.ejs') %>
+
+        <div class="infoBlock infoBlock1">
+            <img src="<%= link %>static/media/images/tech-bg-1.svg" alt="" class="bg">
+
+            <div class="info info1">
+                <div class="infoText">
+                    <p class="caption3">
+                        <%- __('pages').tech.info[0].caption %>
+                    </p>
+                    <p class="text">
+                        <%- __('pages').tech.info[0].text %>
+                    </p>
+                </div>
+
+                <div class="img">
+                    <img src="<%= link %>static/media/images/tech-pic-1.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="infoBlock infoBlock2">
+            <img src="<%= link %>static/media/images/tech-bg-2.svg" alt="" class="bg">
+
+            <div class="info info2">
+                <div class="img">
+                    <img src="<%= link %>static/media/images/tech-pic-2.svg" alt="">
+                </div>
+                <div class="infoText">
+                    <p class="caption3">
+                        <%- __('pages').tech.info[1].caption %>
+                    </p>
+                    <p class="text">
+                        <%- __('pages').tech.info[1].text %>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="infoBlock infoBlock3">
+            <img src="<%= link %>static/media/images/tech-bg-1.svg" alt="" class="bg">
+
+            <div class="info info3">
+                <div class="infoText">
+                    <p class="caption3">
+                        <%- __('pages').tech.info[2].caption %>
+                    </p>
+                    <p class="text">
+                        <%- __('pages').tech.info[2].text %>
+                    </p>
+                </div>
+                <div class="img">
+                    <img src="<%= link %>static/media/images/tech-pic-3.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="infoBlock infoBlock4">
+            <div class="info info4">
+                <div class="img">
+                    <img src="<%= link %>static/media/images/tech-pic-4.svg" alt="">
+                </div>
+                <div class="infoText">
+                    <p class="caption3">
+                        <%- __('pages').tech.info[3].caption %>
+                    </p>
+                    <p class="text">
+                        <%- __('pages').tech.info[3].text %>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="infoBlock infoBlock5">
+            <img src="<%= link %>static/media/images/tech-bg-2.svg" alt="" class="bg">
+
+            <div class="info info5">
+                <div class="infoText">
+                    <p class="caption3">
+                        <%- __('pages').tech.info[4].caption %>
+                    </p>
+                    <p class="text">
+                        <%- __('pages').tech.info[3].text %>
+                    </p>
+                </div>
+                <div class="img">
+                    <img src="<%= link %>static/media/images/tech-pic-5.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="infoBlock infoBlock6">
+            <img src="<%= link %>static/media/images/tech-bg-1.svg" alt="" class="bg">
+
+            <div class="info info6">
+                <div class="img">
+                    <img src="<%= link %>static/media/images/tech-pic-6.svg" alt="">
+                </div>
+                <div class="infoText">
+                    <p class="caption3">
+                        <%- __('pages').tech.info[5].caption %>
+                    </p>
+                    <p class="text">
+                        <%- __('pages').tech.info[5].text %>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="infoBlock infoBlock7">
+            <div class="info info7">
+                <div class="infoText">
+                    <p class="caption3">
+                        <%- __('pages').tech.info[6].caption %>
+                    </p>
+                    <p class="text">
+                        <%- __('pages').tech.info[6].text %>
+                    </p>
+                </div>
+                <div class="img">
+                    <img src="<%= link %>static/media/images/tech-pic-7.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="infoBlock infoBlock8">
+            <img src="<%= link %>static/media/images/tech-bg-2.svg" alt="" class="bg">
+            
+            <div class="info info8">
+                <div class="img">
+                    <img src="<%= link %>static/media/images/main-invest.svg" alt="">
+                </div>
+                <div class="infoText">
+                    <p class="caption3">
+                        <%- __('pages').tech.info[7].caption %>
+                    </p>
+                    <p class="text">
+                        <%- __('pages').tech.info[7].text %>
+                    </p>
+                    <a href="" class="textOpen"><%- __('pages').tech.open %></a>
+                </div>
+            </div>
+        </div>
+    </div>

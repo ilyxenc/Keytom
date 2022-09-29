@@ -1,0 +1,20 @@
+<div class="menuBlock sticky menuBlockWhite notDisplayed">
+    <div class="menu">
+        <a href="<%= link %>">
+            <img src="<%= link %>static/media/images/logo-color.svg" alt="" class="logo">
+        </a>
+
+        <div class="links">
+            <a href="<%= link %>about" class="basicSM"><%= __('menu').about %></a>
+            <a href="<%= link %>roadmap" class="basicSM"><%= __('menu').roadmap %></a>
+            <a href="<%= link %>tech" class="basicSM"><%= __('menu').tech %></a>
+            <a href="<%= link %>tokenomics" class="basicSM"><%= __('menu').tokenomics %></a>
+            <a href="<%= link %>partnership" class="basicSM"><%= __('menu').partners %></a>
+            <a href="" class="basicSM open"><%= __('menu').open %></a>
+            <div class="langToggle">
+                <span class="basicSM lang" data-lang="<%= __('toggleLang').short.curr %>" onclick="langToggle(this)"><%= __('toggleLang').short.curr %> <img src="<%= link %>static/media/images/arrow-top-down-color.svg" alt=""></span>
+                <span class="basicSM secondLang notDisplayed" data-lang="<%= __('toggleLang').short.next %>" onclick="langToggle(this)"><%= __('toggleLang').short.next %></span>
+            </div>
+        </div>
+    </div>
+</div>

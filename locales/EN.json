@@ -1,0 +1,245 @@
+{
+	"toggleLang": {
+		"short": {
+			"curr": "EN",
+			"next": "RU"
+		},
+		"long": {
+			"curr": "English",
+			"next": "Русский язык"
+		}
+	},
+	"menu": {
+		"about": "About the Project",
+		"roadmap": "Road map",
+		"tech": "Technologies",
+		"tokenomics": "Tokenomics",
+		"partners": "Partnership",
+		"open": "Open Wallet"
+	},
+	"pages": {
+		"index": {
+			"topBlock": {
+				"header": "Keytom",
+				"description": "<span>A new generation</span> digital bank for working with cryptocurrencies and electronic fiat money",
+				"additionally": "Scroll down to find out more"
+			},
+			"first": {
+				"about": "More about the project",
+				"caption": "A new generation<br /><span>digital</span> bank",
+				"text": "Keytom Neobank is a fintech innovator that offers services based on its own unique technology solutions. Our technologies foster development of both the securities market, the payment and settlement sectors, and banking industry in general. Unlike traditional banks, we are constantly seeking new ways to make investment decisions. The Keytom’s goal is to provide the maximum convenience for users in the collaboration of two worlds, the world of fiat money and the world of cryptocurrencies."
+			},
+			"second": {
+				"about": "Learn more about our technology",
+				"caption": "Keytom Neobank Technical basis",
+				"cap1": "OUR OWN BLOCKCHAIN",
+                "text1": "A new approach to blockchain technology makes it possible to efficiently store and transmit information in electronic document format",
+                "cap2": "HIGH SPEED",
+                "text2": "Processing over 25,000 transactions per second at the level of Visa and Mastercard payment systems",
+                "cap3": "DATA STORAGE",
+                "text3": "Data storage in a blockchain with encryption capability",
+                "cap4": "OUR OWN STABLECOIN STANDARD",
+                "text4": "Seamless transfer of fiat money to the crypto state, quick money exchange for cryptocurrencies and vice versa",
+                "cap5": "CONFIGURABILITY",
+                "text5": "Implement your individual business logic within the network. Make calculations the way you feel comfortable",
+				"more": "LEARN MORE ABOUT OUR TECHNOLOGIES"
+			},
+			"third": {
+				"about": "Become our client right now",
+				"caption": "Our services",
+				"text": "Smart Keytom banking solutions combine fiat money and cryptocurrency. We expand your financial control capabilities"
+			},
+			"fourth": {
+				"info1": {
+                    "caption": "Fiat currency exchange",
+                    "text": "Exchange over 30 currencies at favorable rates"
+                },
+				"info2": {
+					"caption": "Faster Payments worldwide",
+					"text": "Instant transfers without hidden fees between Keytom Neobank clients"
+				},
+				"info3": {
+					"caption": "Multicurrency cards",
+					"text": "Pay for purchases with crypto assets and fiat currencies wherever VISA and Mastercard are accepted"
+				},
+				"info4": {
+					"caption": "Payment of monthly bills and online purchases",
+					"text": "Pay with fiat and crypto for everyday purchases and utilities"
+				},
+				"info5": {
+					"caption": "Payment by installments fee-free",
+					"text": "Divide your payment into equal parts: 3, 6, 9 or 12 parts"
+				},
+				"info6": {
+					"caption": "Bank loans and overdrafts",
+					"text": "Pay for online purchases and daily expenses using borrowed funds"
+				},
+				"info7": {
+					"caption": "Customized Services",
+					"text": "Manage your account, cards and wallets. Customize the interface. Create virtual cards. Keep track of spending and more."
+				},
+				"info8": {
+					"caption": "Working with cryptoassets",
+					"text": "Buy and exchange cryptocurrencies, earn interest on the balance, undergo full training on working with cryptoassets"
+				},
+				"info9": {
+					"caption": "Fiat p2p payments with a balance in cryptoassets",
+					"text": "Fast transfers at the most favorable rates"
+				},
+				"info10": {
+					"caption": "Crypto Investments",
+					"text": "Earn up to 12% per annum on deposits, as well as by connecting to DeFi platforms and liquidity mining projects"
+				},
+				"info11": {
+					"caption": "Issuance of company digital shares",
+					"text": "Raise funds to finance your projects by issuing and selling tokens in the Keytom ecosystem"
+				},
+				"info12": {
+					"caption": "Legally significant electronic agreements",
+					"text": "Make deals by creating customized smart contracts and back them up with payments"
+				},
+				"info13": {
+					"caption": "Loyalty program for business",
+					"text": "Service of tokenized accrual of cashback and bonuses for business. Create a personalized loyalty system for your clients"
+				}
+			},
+			"fifth": {
+				"about": "We are always open for new partners",
+				"caption": "Licenses and integrations",
+				"companies": [
+					"Licenses and integrations",
+					"Advance approval",
+					"MSB license: payments, currency exchange, cryptocurrency transactions",
+					"Own funding. Client payments",
+					"Allocated IBAN: SEPA",
+					"Complete Payment Integration Allocated IBAN: SEPA, SWIFT",
+					"Client payments",
+					"Client payments: Citibank — EUR/AUD/SGD; Barclay — GBP, MUFG Bank Ltd — JPY; First Century Bank - USD)",
+					"Own funding",
+					"AML/CFT procedures",
+					"Own funding/<br />payments",
+					"Corporate account",
+					"Corporate account"
+				]
+			},
+			"sixth": {
+				"about": "We are always open for new partners",
+				"caption": "Legal support",
+				"text": [
+					"Association of law firms and legal services from different cities and several EU member states in the Mediterranean",
+					"Law office, member of the East Legal Team Alliance of European Law Offices"
+				]
+			},
+			"seventh": {
+				"caption": "Become an investor right now",
+				"text": "Create your Keytom wallet to be among the first to see the possibilities of the payment system, profitably purchase KTM Token and take part in promotional programs",
+				"open": "Create&nbsp;Wallet"
+			},
+			"eighth": {
+				"about": "Learn more",
+                "caption": "Road map",
+                "info": {
+                    "date": [
+                        "2019-2021",
+                        "June, 2022",
+                        "July, 2022",
+                        "August - October  2022"
+                    ],
+                    "text": [
+                        "Development of the Keytom blockchain platform",
+                        "Neobank Market Analysis",
+                        "Development of Keytom neobank services map",
+                        "Development of Keytom payment system"
+                    ],
+                    "next": "What's<br />next?"
+                }
+			},
+			"ninth": {
+				"about": "We are always open for new partners",
+                "caption": "Stay connected",
+                "text": "Subscribe to the newsletter and stay up to date with the latest Keytom events and news",
+                "name": "Your name",
+                "agreements": [
+                    "Consent to our",
+                    "personal data processing policy"
+                ],
+                "send": "Send"
+			}
+		},
+        "about": {
+            "topBlock": {
+                "header": "About the project",
+                "description": "Dive into neobank market research and learn about our <span>principles and values</span>",
+                "additionally": "Download PDF"
+            }
+        },
+        "roadmap": {
+            "topBlock": {
+                "header": "Road map",
+                "description": "Our team has put in a lot of effort and we still have a lot to do. Find out about our current successes and <span>plans for the future</span>",
+                "additionally": "Scroll down to find out more"
+            }
+        },
+		"tech": {
+            "topBlock": {
+                "header": "Technology",
+                "description": "Technology has changed and affected every aspect of our lives: the way we connect and communicate with each other, learn and teach others, work, do business and relax – the way we <span>shape our society</span>.",
+                "additionally": "Scroll down to find out more"
+            },
+			"info": [
+				{
+                    "caption": "Data storage",
+                    "text": "Storing data directly on the blockchain. Any competing solutions using blockchain technology to validate the immutability of files can record only checksums (integrity imprint) of files to the blockchain, with the meaningful data itself being separate from the blockchain<br /><br />The Keytom solution ensures the storage of significant data on the blockchain in accordance with the requirements of federal laws of various states for the organization of information systems and information security, whether it be documents, images, big data or other types of objects. With this approach, it becomes possible to use the basic functional properties of the blockchain to restore significant data with a guarantee of their immutability in the event of a server (or a group of servers) being taken out of operation"
+                }, {
+                    "caption": "Application",
+                    "text": "The ability to record data to the blockchain with a technological guarantee of protection against falsification allows taking the application of technology to a new level by creating unique services useful for Keytom Neobank clients, the crypto community and those who are far from the crypto world, but desires to use innovative services in their work and daily activities.<br /><br />One of such services can be: a service of legally relevant electronic agreements, a system of identification and management of personal data, a transport and logistics service, medical records storage service, an information exchange service for insurance companies, qualification confirmation/withdrawal service, crowdfunding and investment attraction services, various databases by data types. All these services exist within one scalable network that unites millions of users worldwide."
+                }, {
+                    "caption": "High performance at the level of VISA and Mastercard payment systems",
+                    "text": "Blockchain performance supports a processing speed of 25&nbsp;000 transactions per second, scalable to the limits of the physical performance of the network and servers"
+                }, {
+                    "caption": "Data security",
+                    "text": "High degree of data security with the support of cryptographic functions using RSA 4096 algorithms (key length change is optional). Possibility of integration with certified information security tools. Hashing of transactions and blocks is implemented using a family of second-generation cryptographic algorithms (SHA-2) with a configurable key length of 256 or 512 bytes. If necessary, the transmitted blocks can be additionally encrypted using state standard encryption or OpenSSL"
+                }, {
+                    "caption": "Configurability",
+                    "text": "Keytom codes are highly customizable. One example could be a transaction fee for the transfer of crypto assets between users, which can be set by each operator at its discretion: it can be a constant percentage of the amount (as in acquiring), or it may be a floating (variable in value) percentage of the amount sent in monetary terms, or it may be a zero commission, in case when the network operator's earnings lie in the provision of other services.<br /><br />In the Keytom network, users themselves decide which node (which operator) to connect to and thereby vote with their money who to be served by, thus, operators need to constantly maintain the level of service, improve services and build customer-oriented transaction costs"
+                }, {
+                    "caption": "Multicurrency",
+                    "text": "Keytom supports multicurrency payments and currency conversion. Within the network, participants can exchange currencies using the service of a trusted issuer. This is one or several network participants that provide the transfer of one currency to another.<br /><br />By integrating blockchain nodes with coins (Btc, Eth, Zcash, Bch and others) or integrating with a bank via API, it is possible to exchange coins, tokens and fiat money"
+                }, {
+                    "caption": "Consensus",
+                    "text": "Consensus is a set of conditions for choosing a trusted server that guarantees the validity of blocks in the shared network with its signature. The Keytom platform allows arbitrary programming of consensus. In other words, we can more flexibly configure the mechanism for regulating the blockchain network, which will protect it from widespread attacks on consensus and configure the network as precisely as possible for the specific needs of the client."
+                }, {
+                    "caption": "Become an investor right now",
+                    "text": "Create your Keytom wallet to be among the first to see the possibilities of the payment system, profitably purchase KTM Token and take part in promotional programs"
+                }
+			],
+            "open": "Create&nbsp;Wallet"
+        },
+        "tokenomics": {
+            "topBlock": {
+                "header": "Tokenomics",
+                "description": "Value proposition and basic mechanics of the token, as well as description of <span>the project tokenomics</span>",
+                "additionally": "Details are coming soon"
+            }
+        },
+        "partnership": {
+            "topBlock": {
+                "header": "Partnership",
+                "description": "Looking for cooperation opportunities?<br /><br /><span>We're open</span> for new ideas!",
+                "additionally": "Scroll down to find out more"
+            },
+            "info": {
+                "caption": "Cooperation<br />& partnership",
+                "name": "Name",
+                "company": "Company",
+                "post": "Position",
+                "comments": "Comments",
+                "agreements": [
+                    "Consent to our",
+                    "personal data processing policy"
+                ],
+                "send": "Submit&nbsp;the&nbsp;form"
+            }
+        }
+	}
+}

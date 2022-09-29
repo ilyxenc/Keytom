@@ -1,0 +1,64 @@
+<img src="<%= link %>static/media/images/menu.svg" alt="" class="menuButton" onclick="menu(this)">
+
+<div class="mobileMenu fadeInDown">
+    <img src="<%= link %>static/media/images/menu.svg" alt="" class="menuButton menuButtonActive" onclick="menu(this)">
+
+    <div class="links">
+        <a href="<%= link %>" class="basicM">
+            <%= __('menu').main %>
+        </a>
+        <a href="<%= link %>about" class="basicM">
+            <%= __('menu').about %>
+        </a>
+        <a href="<%= link %>roadmap" class="basicM">
+            <%= __('menu').roadmap %>
+        </a>
+        <a href="<%= link %>tech" class="basicM">
+            <%= __('menu').tech %>
+        </a>
+        <a href="<%= link %>tokenomics" class="basicM">
+            <%= __('menu').tokenomics %>
+        </a>
+        <a href="<%= link %>partnership" class="basicM">
+            <%= __('menu').partners %>
+        </a>
+
+        <div class="langToggle">
+            <span class="basicM lang" data-lang="<%= __('toggleLang').short.curr %>" onclick="langToggle(this)">
+                <%= __('toggleLang').long.curr %> <img src="<%= link %>static/media/images/arrow-top-down.svg" alt="">
+            </span>
+            <span class="basicM secondLang notDisplayed" data-lang="<%= __('toggleLang').short.next %>"
+                onclick="langToggle(this)">
+                <%= __('toggleLang').long.next %>
+            </span>
+        </div>
+
+        <a href="" class="basicM open">
+            <%= __('menu').open %>
+        </a>
+    </div>
+
+    <div class="bottom">
+        <div>
+            <a href="">
+                <img src="<%= link %>static/media/images/site.svg" alt="">
+            </a>
+            <a href="">
+                <img src="<%= link %>static/media/images/mail.svg" alt="">
+            </a>
+            <a href="">
+                <img src="<%= link %>static/media/images/t.svg" alt="">
+            </a>
+        </div>
+
+        <p class="rights">
+            © Keytom Digital LLC, all rights reserved, 2022
+        </p>
+    </div>
+
+    <img src="<%= link %>static/media/images/menu-bg.svg" alt="" class="bg">
+</div>
+
+<a href="" class="basicXSS mobileOpen">
+    <%= __('menu').open %>
+</a>

@@ -1,0 +1,58 @@
+<%- include('../parts/head') %>
+
+<link type="text/css" rel="stylesheet" href="<%= link %>static/css/roadmap.css">
+
+<%- include('../parts/preloader') %>
+
+    <div class="topBlockMain">
+        <div class="videoBlock">
+            <video muted>
+                <!-- loop -->
+                <source src="<%= link %>static/media/video/09.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="topBlock roadmap">
+            <%- include('../parts/menu/pc.ejs') %>
+
+            <div class="topBlockText">
+                <div>
+                    <p class="h1">
+                        <%= __('pages').roadmap.topBlock.header %>
+                    </p>
+                    <p class="basicXL">
+                        <%- __('pages').roadmap.topBlock.description %>
+                    </p>
+                    <p class="basicMS" onclick="scrollToElement('next')">
+                        <%= __('pages').roadmap.topBlock.additionally %>
+                        <img src="<%= link %>static/media/images/arrow-top-down.svg" alt="">
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <%- include('../parts/menu/mobile.ejs') %>
+    </div>
+
+    <div id="next" class="roadmap">
+        <%- include('../parts/menu/pc-sticky.ejs') %>
+        <%- include('../parts/menu/mobile-sticky.ejs') %>
+
+        <div style="height:100vh; overflow: scroll; width:100%;scroll-snap-type: y mandatory;">
+            <div style="width: 100%; height: 40vh;scroll-snap-align:center; background-color: yellow;"></div>
+            <div style="width: 100%; height: 40vh;scroll-snap-align:center; background-color: green;"></div>
+            <div style="width: 100%; height: 40vh;scroll-snap-align:center; background-color: blue;"></div>
+            <div style="width: 100%; height: 40vh;scroll-snap-align:center; background-color: red;"></div>
+            <div style="width: 100%; height: 40vh;scroll-snap-align:center; background-color: yellow;"></div>
+            <div style="width: 100%; height: 40vh;scroll-snap-align:center; background-color: green;"></div>
+            <div style="width: 100%; height: 40vh;scroll-snap-align:center; background-color: blue;"></div>
+            <div style="width: 100%; height: 40vh;scroll-snap-align:center; background-color: red;"></div>
+            <div style="width: 100%; height: 40vh;scroll-snap-align:center; background-color: yellow;"></div>
+            <div style="width: 100%; height: 40vh;scroll-snap-align:center; background-color: green;"></div>
+            <div style="width: 100%; height: 40vh;scroll-snap-align:center; background-color: blue;"></div>
+            <div style="width: 100%; height: 40vh;scroll-snap-align:center; background-color: red;"></div>
+
+            <!-- <div class="height: 100%; position: absolute;"></div> -->
+        </div>
+    </div>
+
+    <%- include('../parts/bottom') %>

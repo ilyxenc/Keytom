@@ -1,0 +1,214 @@
+.partnership {
+  background: #4C4EC1;
+  z-index: -1;
+}
+.partnership .bg {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.partnership .first {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 227px 10px 0;
+  box-sizing: border-box;
+  position: relative;
+}
+@media only screen and (max-width: 668px) {
+  .partnership .first {
+    padding: 67px 10px 0;
+  }
+}
+.partnership .first .line {
+  width: auto;
+  height: 50vw;
+  max-height: 708px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 179px;
+  z-index: -1;
+}
+.partnership .first .form {
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "a b" "c d" "e d" "f g" "f h";
+  grid-column-gap: 30px;
+  grid-row-gap: 25px;
+  max-width: 919px;
+  width: 100%;
+  margin-top: 67px;
+  position: relative;
+}
+@media only screen and (max-width: 668px) {
+  .partnership .first .form {
+    grid-template-areas: "a" "c" "e" "b" "d" "g" "f" "h";
+    grid-template-columns: 1fr;
+    max-width: 360px;
+    margin: 40px auto 0;
+  }
+}
+.partnership .first .form .a {
+  grid-area: a;
+}
+.partnership .first .form .b {
+  grid-area: b;
+}
+.partnership .first .form .c {
+  grid-area: c;
+}
+.partnership .first .form .d {
+  grid-area: d;
+}
+.partnership .first .form .e {
+  grid-area: e;
+}
+.partnership .first .form .f {
+  grid-area: f;
+}
+@media only screen and (max-width: 668px) {
+  .partnership .first .form .f {
+    margin: 0 auto;
+    max-width: 300px;
+  }
+}
+.partnership .first .form .g {
+  grid-area: g;
+}
+.partnership .first .form .h {
+  grid-area: h;
+}
+.partnership .first .form .caption7 {
+  margin-bottom: 67px;
+}
+.partnership .first .form .input {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 8px 0 8px 20px;
+  border-radius: 40px;
+  box-sizing: border-box;
+  width: 100%;
+  color: #7B7CD1;
+  background: #E8E8F7;
+  outline: none;
+  border: none;
+  box-shadow: 4px 4px 16px rgba(255, 255, 255, 0.2), -4px -4px 16px rgba(255, 255, 255, 0.2);
+}
+@media only screen and (max-width: 668px) {
+  .partnership .first .form .input {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.partnership .first .form .input::-moz-placeholder {
+  color: inherit;
+}
+.partnership .first .form .input:-ms-input-placeholder {
+  color: inherit;
+}
+.partnership .first .form .input::placeholder {
+  color: inherit;
+}
+.partnership .first .form textarea {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 12px 12px 12px 20px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  color: #7B7CD1;
+  background: #E8E8F7;
+  outline: none;
+  border: none;
+  box-shadow: 4px 4px 16px rgba(255, 255, 255, 0.2), -4px -4px 16px rgba(255, 255, 255, 0.2);
+  max-height: 115px;
+}
+@media only screen and (max-width: 668px) {
+  .partnership .first .form textarea {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.partnership .first .form textarea::-moz-placeholder {
+  color: inherit;
+}
+.partnership .first .form textarea:-ms-input-placeholder {
+  color: inherit;
+}
+.partnership .first .form textarea::placeholder {
+  color: inherit;
+}
+.partnership .first .form .checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 14px;
+  margin-left: 10px;
+}
+@media only screen and (max-width: 668px) {
+  .partnership .first .form .checkbox {
+    margin: 0;
+  }
+}
+.partnership .first .form .checkbox .rules {
+  color: #FFFFFF;
+  font-size: 12px;
+  line-height: 28px;
+}
+@media only screen and (max-width: 668px) {
+  .partnership .first .form .checkbox .rules {
+    line-height: 16px;
+    width: 100%;
+  }
+}
+.partnership .first .form .checkbox .rules a {
+  color: #26E2E2;
+  text-decoration: underline;
+}
+.partnership .first .form .checkbox input {
+  height: 0;
+  width: 0;
+  opacity: 0;
+  position: absolute;
+}
+.partnership .first .form .checkbox input:checked + label img {
+  opacity: 1;
+}
+.partnership .first .form .checkbox label {
+  background: #EAEBF6;
+  width: 23px !important;
+  height: 23px !important;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.partnership .first .form .checkbox label img {
+  width: 17px;
+  height: auto;
+  opacity: 0;
+}
+.partnership .first .form .textOpen {
+  font-weight: 500;
+  color: #4C4EC1;
+  background: #0CD9D4;
+  border-radius: 40px;
+  box-shadow: 4px 4px 16px rgba(150, 148, 255, 0.2), -4px -4px 16px rgba(161, 140, 237, 0.2);
+  max-width: 236px;
+  width: 100%;
+  padding: 9px 20px;
+  box-sizing: border-box;
+  border: none;
+}
+@media only screen and (max-width: 668px) {
+  .partnership .first .form .textOpen {
+    margin: 15px auto 0;
+  }
+}/*# sourceMappingURL=partnership.css.map */

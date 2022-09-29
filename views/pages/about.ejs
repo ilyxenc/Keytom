@@ -1,0 +1,35 @@
+<%- include('../parts/head') %>
+
+<%- include('../parts/preloader') %>
+
+    <div class="topBlockMain">
+        <div class="videoBlock">
+            <video muted>
+                <!-- loop -->
+                <source src="<%= link %>static/media/video/01.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="topBlock about">
+            <%- include('../parts/menu/pc.ejs') %>
+
+            <div class="topBlockText">
+                <div>
+                    <p class="h1">
+                        
+                        <%= __('pages').about.topBlock.header %>
+                    </p>
+                    <p class="basicXL">
+                        <%- __('pages').about.topBlock.description %>
+                    </p>
+                    <p class="basicMS">
+                        <img src="<%= link %>static/media/images/pdf.svg" alt="">
+                        <%= __('pages').about.topBlock.additionally %>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('../parts/menu/mobile.ejs') %>
+
+    <%- include('../parts/bottom') %>

@@ -1,0 +1,603 @@
+<%- include('../parts/head') %>
+
+<link type="text/css" rel="stylesheet" href="<%= link %>static/css/index.css">
+
+<%- include('../parts/preloader') %>
+
+    <div class="topBlockMain">
+        <div class="videoBlock">
+            <video muted>
+                <!-- loop -->
+                <source src="<%= link %>static/media/video/02.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="topBlock index">
+            <%- include('../parts/menu/pc.ejs') %>
+
+            <div class="topBlockText">
+                <div>
+                    <p class="h1">
+                        <%= __('pages').index.topBlock.header %>
+                    </p>
+                    <p class="basicXL">
+                        <%- __('pages').index.topBlock.description %>
+                    </p>
+                    <a class="basicMS" onclick="scrollToElement('next')">
+                        <%= __('pages').index.topBlock.additionally %>
+                        <img src="<%= link %>static/media/images/arrow-top-down.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <%- include('../parts/menu/mobile.ejs') %>
+    </div>
+
+    <div id="next" class="index">
+        <%- include('../parts/menu/pc-sticky.ejs') %>
+        <%- include('../parts/menu/mobile-sticky.ejs') %>
+
+        <div class="first">
+            <div class="left">
+                <a href="<%= link %>about" class="link"><%- __('pages').index.first.about %> <img src="<%= link %>static/media/images/arrow-left-right.svg" alt=""></a>
+
+                <p class="caption1">
+                    <%- __('pages').index.first.caption %>
+                </p>
+
+                <p class="text">
+                    <%- __('pages').index.first.text %>
+                </p>
+            </div>
+            <div class="phoneBlock">
+                <img src="<%= link %>static/media/images/main-phone.png" alt="" class="phone">
+            </div>
+
+            <img src="<%= link %>static/media/images/main-1.svg" alt="" class="bg">
+        </div>
+
+        <div class="second">
+            <a href="<%= link %>tech" class="link"><%- __('pages').index.second.about %> <img src="<%= link %>static/media/images/arrow-left-right.svg" alt=""></a>
+
+            <p class="caption2">
+                <%- __('pages').index.second.caption %>
+            </p>
+
+            <div class="description">
+                <div>
+                    <p class="caption3">
+                        <%- __('pages').index.second.cap1 %>
+                    </p>
+                    <p class="text">
+                        <%- __('pages').index.second.text1 %>
+                    </p>
+                </div>
+                <div>
+                    <p class="caption3">
+                        <%- __('pages').index.second.cap2 %>
+                    </p>
+                    <p class="text">
+                        <%- __('pages').index.second.text2 %>
+                    </p>
+                </div>
+                <div>
+                    <p class="caption3">
+                        <%- __('pages').index.second.cap3 %>
+                    </p>
+                    <p class="text">
+                        <%- __('pages').index.second.text3 %>
+                    </p>
+                </div>
+                <div>
+                    <p class="caption3">
+                        <%- __('pages').index.second.cap4 %>
+                    </p>
+                    <p class="text">
+                        <%- __('pages').index.second.text4 %>
+                    </p>
+                </div>
+                <div>
+                    <p class="caption3">
+                        <%- __('pages').index.second.cap5 %>
+                    </p>
+                    <p class="text">
+                        <%- __('pages').index.second.text5 %>
+                    </p>
+                </div>
+                <a href="<%= link %>tech" class="tech">
+                    <p class="caption4">
+                        <%- __('pages').index.second.more %>
+                    </p>
+                    <img src="<%= link %>static/media/images/main-page-button.svg" alt="" class="nextPage">
+
+                    <img src="<%= link %>static/media/images/main-computer.svg" alt="" class="computer">
+                </a>
+            </div>
+        </div>
+
+        <div class="third">
+            <a href="" class="link"><%- __('pages').index.third.about %> <img src="<%= link %>static/media/images/arrow-left-right.svg" alt=""></a>
+
+            <p class="caption2">
+                <%- __('pages').index.third.caption %>
+            </p>
+
+            <p class="text">
+                <%- __('pages').index.third.text %>
+            </p>
+        </div>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+        <div class="fourth swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="<%= link %>static/media/images/main-cards.png" alt="">
+
+                    <p class="caption4">
+                        <%- __('pages').index.fourth.info1.caption %>
+                    </p>
+
+                    <p class="text">
+                        <%- __('pages').index.fourth.info1.text %>
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<%= link %>static/media/images/main-cards.png" alt="">
+
+                    <p class="caption4">
+                        <%- __('pages').index.fourth.info2.caption %>
+                    </p>
+
+                    <p class="text">
+                        <%- __('pages').index.fourth.info2.text %>
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<%= link %>static/media/images/main-cards.png" alt="">
+
+                    <p class="caption4">
+                        <%- __('pages').index.fourth.info3.caption %>
+                    </p>
+
+                    <p class="text">
+                        <%- __('pages').index.fourth.info3.text %>
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<%= link %>static/media/images/main-cards.png" alt="">
+
+                    <p class="caption4">
+                        <%- __('pages').index.fourth.info4.caption %>
+                    </p>
+
+                    <p class="text">
+                        <%- __('pages').index.fourth.info4.text %>
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<%= link %>static/media/images/main-cards.png" alt="">
+
+                    <p class="caption4">
+                        <%- __('pages').index.fourth.info5.caption %>
+                    </p>
+
+                    <p class="text">
+                        <%- __('pages').index.fourth.info5.text %>
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<%= link %>static/media/images/main-cards.png" alt="">
+
+                    <p class="caption4">
+                        <%- __('pages').index.fourth.info6.caption %>
+                    </p>
+
+                    <p class="text">
+                        <%- __('pages').index.fourth.info6.text %>
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<%= link %>static/media/images/main-cards.png" alt="">
+
+                    <p class="caption4">
+                        <%- __('pages').index.fourth.info7.caption %>
+                    </p>
+
+                    <p class="text">
+                        <%- __('pages').index.fourth.info7.text %>
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<%= link %>static/media/images/main-cards.png" alt="">
+
+                    <p class="caption4">
+                        <%- __('pages').index.fourth.info8.caption %>
+                    </p>
+
+                    <p class="text">
+                        <%- __('pages').index.fourth.info8.text %>
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<%= link %>static/media/images/main-cards.png" alt="">
+
+                    <p class="caption4">
+                        <%- __('pages').index.fourth.info9.caption %>
+                    </p>
+
+                    <p class="text">
+                        <%- __('pages').index.fourth.info9.text %>
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<%= link %>static/media/images/main-cards.png" alt="">
+
+                    <p class="caption4">
+                        <%- __('pages').index.fourth.info10.caption %>
+                    </p>
+
+                    <p class="text">
+                        <%- __('pages').index.fourth.info10.text %>
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<%= link %>static/media/images/main-cards.png" alt="">
+
+                    <p class="caption4">
+                        <%- __('pages').index.fourth.info11.caption %>
+                    </p>
+
+                    <p class="text">
+                        <%- __('pages').index.fourth.info11.text %>
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<%= link %>static/media/images/main-cards.png" alt="">
+
+                    <p class="caption4">
+                        <%- __('pages').index.fourth.info12.caption %>
+                    </p>
+
+                    <p class="text">
+                        <%- __('pages').index.fourth.info12.text %>
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<%= link %>static/media/images/main-cards.png" alt="">
+
+                    <p class="caption4">
+                        <%- __('pages').index.fourth.info12.caption %>
+                    </p>
+
+                    <p class="text">
+                        <%- __('pages').index.fourth.info12.text %>
+                    </p>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="left notDisplayed">
+                <img src="<%= link %>static/media/images/main-page-button.svg" alt="">
+            </div>
+            <div class="right">
+                <img src="<%= link %>static/media/images/main-page-button.svg" alt="">
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+        <script>
+            const swiper = new Swiper(".mySwiper", {
+                slidesPerView: "auto",
+                spaceBetween: 30,
+                navigation: {
+                    nextEl: ".fourth .right",
+                    prevEl: ".fourth .left",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true
+                },
+                breakpoints: {
+                    1000: {
+                        slidesPerView: "auto",
+                        spaceBetween: 30
+                    },
+                    669: {
+                        slidesPerView: 2,
+                        spaceBetween: 30
+                    },
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 40,
+                        centeredSlides: true
+                    }
+                }
+            });
+
+            const left = document.querySelector(".fourth .left");
+            const right = document.querySelector(".fourth .right");
+
+            swiper.on("slideChange", function () {
+
+                if (swiper.activeIndex == 0) {
+                    left.classList.add("notDisplayed");
+                } else {
+                    left.classList.remove("notDisplayed");
+                }
+
+                if (swiper.activeIndex >= swiper.slides.length - 2) {
+                    right.classList.add("notDisplayed");
+                } else {
+                    right.classList.remove("notDisplayed");
+                }
+            });
+        </script>
+
+        <div class="fifth">
+            <a href="" class="link"><%- __('pages').index.fifth.about %> <img src="<%= link %>static/media/images/arrow-left-right.svg" alt=""></a>
+
+            <p class="caption2">
+                <%- __('pages').index.fifth.caption %>
+            </p>
+
+            <div class="integrations">
+                <div class="integration">
+                    <img src="<%= link %>static/media/images/main-part-1.png" alt="">
+
+                    <p class="textSmall">
+                        <%- __('pages').index.fifth.companies[0] %>
+                    </p>
+                </div>
+                <div class="integration">
+                    <img src="<%= link %>static/media/images/main-part-2.png" alt="">
+
+                    <p class="textSmall">
+                        <%- __('pages').index.fifth.companies[1] %>
+                    </p>
+                </div>
+                <div class="integration">
+                    <img src="<%= link %>static/media/images/main-part-3.png" alt="">
+
+                    <p class="textSmall">
+                        <%- __('pages').index.fifth.companies[2] %>
+                    </p>
+                </div>
+                <div class="integration">
+                    <img src="<%= link %>static/media/images/main-part-4.png" alt="">
+
+                    <p class="textSmall">
+                        <%- __('pages').index.fifth.companies[3] %>
+                    </p>
+                </div>
+
+                <div class="integration">
+                    <img src="<%= link %>static/media/images/main-part-5.png" alt="">
+
+                    <p class="textSmall">
+                        <%- __('pages').index.fifth.companies[4] %>
+                    </p>
+                </div>
+                <div class="integration">
+                    <img src="<%= link %>static/media/images/main-part-6.png" alt="">
+
+                    <p class="textSmall">
+                        <%- __('pages').index.fifth.companies[5] %>
+                    </p>
+                </div>
+                <div class="integration">
+                    <img src="<%= link %>static/media/images/main-part-7.png" alt="">
+
+                    <p class="textSmall">
+                        <%- __('pages').index.fifth.companies[6] %>
+                    </p>
+                </div>
+                <div class="integration">
+                    <img src="<%= link %>static/media/images/main-part-8.png" alt="">
+
+                    <p class="textSmall">
+                        <%- __('pages').index.fifth.companies[7] %>
+                    </p>
+                </div>
+
+                <div class="integration">
+                    <img src="<%= link %>static/media/images/main-part-9.png" alt="">
+
+                    <p class="textSmall">
+                        <%- __('pages').index.fifth.companies[8] %>
+                    </p>
+                </div>
+                <div class="integration">
+                    <img src="<%= link %>static/media/images/main-part-10.png" alt="">
+
+                    <p class="textSmall">
+                        <%- __('pages').index.fifth.companies[9] %>
+                    </p>
+                </div>
+                <div class="integration">
+                    <img src="<%= link %>static/media/images/main-part-11.png" alt="">
+
+                    <p class="textSmall">
+                        <%- __('pages').index.fifth.companies[10] %>
+                    </p>
+                </div>
+                <div class="integration">
+                    <img src="<%= link %>static/media/images/main-part-12.png" alt="">
+
+                    <p class="textSmall">
+                        <%- __('pages').index.fifth.companies[11] %>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sixth">
+            <a href="<%= link %>partnership" class="link"><%- __('pages').index.sixth.about %> <img src="<%= link %>static/media/images/arrow-left-right.svg" alt=""></a>
+
+            <p class="caption2">
+                <%- __('pages').index.sixth.caption %>
+            </p>
+
+            <div class="legal">
+                <div class="left">
+                    <img src="<%= link %>static/media/images/main-legal-1.png" alt="">
+
+                    <p class="textMiddle"><%- __('pages').index.sixth.text[0] %></p>
+                </div>
+                <div class="right">
+                    <img src="<%= link %>static/media/images/main-legal-2.png" alt="">
+
+                    <p class="textMiddle"><%- __('pages').index.sixth.text[1] %></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="seventhBlock">
+            <img src="<%= link %>static/media/images/main-invest-bg.svg" alt="" class="bg">
+
+            <div class="seventh">
+                <img src="<%= link %>static/media/images/main-invest.svg" alt="">
+
+                <div>
+                    <p class="caption5">
+                        <%- __('pages').index.seventh.caption %>
+                    </p>
+                    <p class="text">
+                        <%- __('pages').index.seventh.text %>
+                    </p>
+                    <a href="" class="textOpen"><%- __('pages').index.seventh.open %></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="eighthBlock">
+            <img src="<%= link %>static/media/images/main-roadmap-bg.svg" alt="" class="bg">
+
+            <div class="eighth">
+                <a href="<%= link %>roadmap" class="link"><%- __('pages').index.eighth.about %> <img src="<%= link %>static/media/images/arrow-left-right-white.svg" alt=""></a>
+
+                <p class="caption6">
+                    <%- __('pages').index.eighth.caption %>
+                </p>
+            </div>
+
+            <div class="roadmap">
+                <img src="<%= link %>static/media/images/main-roadmap-highlight.png" alt="" class="highlight">
+
+                <img src="<%= link %>static/media/images/main-roadmap-bg-2.svg" alt="" class="forms">
+                
+                <img src="<%= link %>static/media/images/main-roadmap-bg-3.svg" alt="" class="line">
+
+                <img src="<%= link %>static/media/images/main-coin.svg" alt="" class="coin1">
+
+                <img src="<%= link %>static/media/images/main-coin.svg" alt="" class="coin2">
+
+                <img src="<%= link %>static/media/images/main-coin.svg" alt="" class="coin3">
+
+                <img src="<%= link %>static/media/images/main-coin.svg" alt="" class="coin4">
+
+                <div class="info1">
+                    <img src="<%= link %>static/media/images/main-roadmap-decor.svg" alt="" class="decor">
+
+                    <p class="date"><%- __('pages').index.eighth.info.date[0] %></p>
+                    <p class="info">
+                        <%- __('pages').index.eighth.info.text[0] %>
+                    </p>
+                </div>
+
+                <div class="info2">
+                    <img src="<%= link %>static/media/images/main-roadmap-decor.svg" alt="" class="decor">
+                    
+                    <p class="date"><%- __('pages').index.eighth.info.date[1] %></p>
+                    <p class="info">
+                        <%- __('pages').index.eighth.info.text[1] %>
+                    </p>
+                </div>
+
+                <div class="info3">
+                    <img src="<%= link %>static/media/images/main-roadmap-decor.svg" alt="" class="decor">
+
+                    <p class="date"><%- __('pages').index.eighth.info.date[2] %></p>
+                    <p class="info">
+                        <%- __('pages').index.eighth.info.text[2] %>
+                    </p>
+                </div>
+
+                <div class="info4">
+                    <img src="<%= link %>static/media/images/main-roadmap-decor.svg" alt="" class="decor">
+
+                    <p class="date"><%- __('pages').index.eighth.info.date[3] %></p>
+                    <p class="info">
+                        <%- __('pages').index.eighth.info.text[3] %>
+                    </p>
+                </div>
+
+                <a href="<%= link %>roadmap" class="button">
+                    <%- __('pages').index.eighth.info.next %> <img src="<%= link %>static/media/images/main-page-button.svg" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="ninth">
+            <a href="<%= link %>partnership" class="link"><%- __('pages').index.ninth.about %> <img src="<%= link %>static/media/images/arrow-left-right.svg" alt=""></a>
+
+            <p class="caption2">
+                <%- __('pages').index.ninth.caption %>
+            </p>
+
+            <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+
+            <div class="form">
+                <div class="left">
+                    <p class="text">
+                        <%- __('pages').index.ninth.text %>
+                    </p>
+                    <input type="text" name="name" id="name" class="input" placeholder="<%- __('pages').index.ninth.name %>">
+                    <input type="email" name="email" id="email" class="input" placeholder="Email">
+    
+                    <div class="checkbox">
+                        <input type="checkbox" name="rules" id="rules" required>
+                        <label for="rules">
+                            <img src="<%= link %>static/media/images/main-form-checked.svg" alt="" class="">
+                        </label>
+    
+                        <p class="rules">
+                            <%- __('pages').index.ninth.agreements[0] %> <a href=""><%- __('pages').index.ninth.agreements[1] %></a>
+                        </p>
+                    </div>
+
+                    <div class="g-recaptcha" data-sitekey="6LcSTzgiAAAAAHUcpql5mEcAt9SblAlq1OhdxEjM"></div>
+
+                    <script type="text/javascript">
+                        var onloadCallback = function() {
+                          alert("grecaptcha is ready!");
+                        };
+                    </script>
+    
+                    <button class="textOpen send" onclick="send('<%= link %>form/subscription')"><%- __('pages').index.ninth.send %></button>
+                </div>
+                
+                <img src="<%= link %>static/media/images/main-form.svg" alt="" class="looking">
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="links">
+                <a href="">
+                    <img src="<%= link %>static/media/images/site.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="<%= link %>static/media/images/mail.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="<%= link %>static/media/images/t.svg" alt="">
+                </a>
+            </div>
+            <p class="textFooter">© Keytom Digital LLC, all rughts reserved, 2022</p>
+            <p class="textFooterSmall">Suite 7, Henville Building<br />Charlestown, Nevis, West Indies</p>
+        </div>
+    </div>
+
+    <%- include('../parts/bottom') %>

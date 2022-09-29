@@ -1,0 +1,97 @@
+<%- include('../parts/head') %>
+
+<link type="text/css" rel="stylesheet" href="<%= link %>static/css/partnership.css">
+
+<%- include('../parts/preloader') %>
+
+    <div class="topBlockMain">
+        <div class="videoBlock">
+            <video muted>
+                <!-- loop -->
+                <source src="<%= link %>static/media/video/05.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="topBlock index">
+            <%- include('../parts/menu/pc.ejs') %>
+
+            <div class="topBlockText">
+                <div>
+                    <p class="h1">
+                        <%= __('pages').partnership.topBlock.header %>
+                    </p>
+                    <p class="basicXL">
+                        <%- __('pages').partnership.topBlock.description %>
+                    </p>
+                    <p class="basicMS" onclick="scrollToElement('next')">
+                        <%= __('pages').partnership.topBlock.additionally %>
+                        <img src="<%= link %>static/media/images/arrow-top-down.svg" alt="">
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <%- include('../parts/menu/mobile.ejs') %>
+    </div>
+
+    <div id="next" class="partnership">
+        <%- include('../parts/menu/pc-sticky-white.ejs') %>
+        <%- include('../parts/menu/mobile-sticky-white.ejs') %>
+
+        <img src="<%= link %>static/media/images/partnership-bg.svg" alt="" class="bg">
+
+        <div class="first">
+            <p class="caption7">
+                <%- __('pages').partnership.info.caption %>
+            </p>
+
+            <img src="<%= link %>static/media/images/partnership-line.svg" alt="" class="line">
+
+            <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+
+            <div class="form">
+
+                <input type="text" name="name" id="name" class="input a" placeholder="<%- __('pages').partnership.info.name %>*" required>
+                <input type="text" name="email" id="email" class="input b" placeholder="Email*" required>
+                <input type="text" name="company" id="company" class="input c" placeholder="<%- __('pages').partnership.info.company %>*" required>
+                <input type="text" name="post" id="post" class="input e" placeholder="<%- __('pages').partnership.info.post %>*" required>
+                <textarea name="comment" id="comment" rows="3" class="d" placeholder="<%- __('pages').partnership.info.comments %>"></textarea>
+                <div class="g-recaptcha f" data-sitekey="6LcSTzgiAAAAAHUcpql5mEcAt9SblAlq1OhdxEjM"></div>
+
+                <script type="text/javascript">
+                    var onloadCallback = function() {
+                        alert("grecaptcha is ready!");
+                    };
+                </script>
+                
+                <div class="checkbox g">
+                    <input type="checkbox" name="rules" id="rules" required>
+                    <label for="rules">
+                        <img src="<%= link %>static/media/images/main-form-checked.svg" alt="" class="">
+                    </label>
+
+                    <p class="rules">
+                        <%- __('pages').partnership.info.agreements[0] %> <a href=""><%- __('pages').partnership.info.agreements[1] %></a>
+                    </p>
+                </div>
+
+                <button class="textOpen send h" onclick="send('<%= link %>form/partnership')"><%- __('pages').partnership.info.send %></button>
+            </div>
+            <div class="footer">
+                <div class="links">
+                    <a href="">
+                        <img src="<%= link %>static/media/images/site.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="<%= link %>static/media/images/mail.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="<%= link %>static/media/images/t.svg" alt="">
+                    </a>
+                </div>
+                <p class="textFooter">© Keytom Digital LLC, all rughts reserved, 2022</p>
+                <p class="textFooterSmall">Suite 7, Henville Building<br />Charlestown, Nevis, West Indies</p>
+            </div>
+        </div>
+    </div>
+
+    <%- include('../parts/bottom') %>

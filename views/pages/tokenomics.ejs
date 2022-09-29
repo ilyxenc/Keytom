@@ -1,0 +1,33 @@
+<%- include('../parts/head') %>
+
+<%- include('../parts/preloader') %>
+
+    <div class="topBlockMain">
+        <div class="videoBlock">
+            <video muted>
+                <!-- loop -->
+                <source src="<%= link %>static/media/video/02.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="topBlock index">
+            <%- include('../parts/menu/pc.ejs') %>
+
+            <div class="topBlockText">
+                <div>
+                    <p class="h1">
+                        <%= __('pages').tokenomics.topBlock.header %>
+                    </p>
+                    <p class="basicXL">
+                        <%- __('pages').tokenomics.topBlock.description %>
+                    </p>
+                    <p class="basicMS">
+                        <%= __('pages').tokenomics.topBlock.additionally %>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('../parts/menu/mobile.ejs') %>
+
+    <%- include('../parts/bottom') %>

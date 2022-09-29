@@ -1,0 +1,26 @@
+
+const i18n = require('i18n');
+
+i18n.configure({
+    // setup some locales - other locales default to en silently
+    locales: ['RU', 'EN'],
+
+    // where to store json files - defaults to './locales' relative to modules directory
+    directory: __dirname + '/locales',
+
+    defaultLocale: 'RU',
+
+    // sets a custom cookie name to parse locale settings from  - defaults to NULL
+    cookie: 'lang',
+});
+
+module.exports = function (req, res, next) {
+
+    i18n.init(req, res);
+
+    res.locals.__ = i18n.__;
+
+    var current_locale = i18n.getLocale();
+
+    return next();
+};
