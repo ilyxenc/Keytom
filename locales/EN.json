@@ -178,7 +178,45 @@
                 "header": "Road map",
                 "description": "Our team has put in a lot of effort and we still have a lot to do. Find out about our current successes and <span>plans for the future</span>",
                 "additionally": "Scroll down to find out more"
-            }
+            },
+			"info": {
+				"date": [
+					"2019-2021",
+					"June, 2022",
+					"July, 2022",
+					"August - October, 2022",
+					"September, 2022",
+					"October, 2022",
+					"October 2022 - July  2023",
+					"July-August, 2023",
+					"September-October, 2023"
+				],
+				"caption": [
+					"Development of the Keytom blockchain platform",
+					"Analysis of the neobank market",
+					"Development of Keytom neobank services card",
+					"Development of Keytom payment system",
+					"License acquisition",
+					"Conducting a closed token sale",
+					"Neobank software development",
+					"Preparation for marketing events for IDO entering",
+					"Conducting IDO Keytom Neobank"
+				],
+				"text": [
+					"A software platform for creating industrial solutions based on distributed ledger technology has been created",
+					"The main sources of income for neobanks, risks in work, forecasts for the future are identified. Research on the needs of neobank clients from the EU countries was conducted using special 'in-depth' interviews.",
+					"Services required to be developed within the framework of banking software before entering IDO",
+					"A software platform based on the Keytom blockchain as a promotional application for investors that allows you to:<ul><li>issue KTM Token;</li><li>provide KTM Token with cryptoassets through the sale to investors, for this purpose, a web 3.0 Metamask wallet is connected to the service;</li><li>ensure the transfer of tokens between platform participants</li></ul>",
+					"Acquisition of a number of necessary licenses for banking activities, including integration with neo-banks, payment systems, cryptocurrency exchanges, etc.",
+					"Closed sale of tokens. Raising funds for project development",
+					"Development of service solutions such as:<ul><li>authorization (compliance);</li><li>homepage customization;</li><li>currency exchange and crypto purchase;</li><li>account management;</li><li>wallet management;</li><li>card management;</li><li>expenditure control;</li><li>functionality of disposable cards;</li><li>administrator control panel.</li></ul>"
+				]
+			},
+			"investor": {
+				"caption": "Become an investor<br />right now",
+				"text": "Create your Keytom wallet to be among the first to see the possibilities of the payment system, profitably purchase KTM Token and take part in promotional programs",
+				"open": "Create&nbsp;Wallet"
+			}
         },
 		"tech": {
             "topBlock": {
