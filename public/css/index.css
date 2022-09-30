@@ -207,7 +207,7 @@
 @media only screen and (max-width: 668px) {
   .index .second .description .tech .computer {
     left: 106px;
-    top: 34px;
+    top: 0;
   }
 }
 .index .third {
@@ -990,7 +990,7 @@
 @media only screen and (max-width: 668px) {
   .index .ninth .form .left .checkbox .rules {
     line-height: 16px;
-    width: 100%;
+    width: calc(100% - 14px - 23px);
   }
 }
 .index .ninth .form .left .checkbox .rules a {

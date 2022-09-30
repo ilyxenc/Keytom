@@ -164,7 +164,7 @@
 @media only screen and (max-width: 668px) {
   .partnership .first .form .checkbox .rules {
     line-height: 16px;
-    width: 100%;
+    width: calc(100% - 14px - 23px);
   }
 }
 .partnership .first .form .checkbox .rules a {
