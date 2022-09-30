@@ -4,7 +4,7 @@
 
     <div class="topBlockMain">
         <div class="videoBlock">
-            <video muted>
+            <video muted loop>
                 <!-- loop -->
                 <source src="<%= link %>static/media/video/01.mp4" type="video/mp4">
             </video>
@@ -16,7 +16,7 @@
                 <div>
                     <p class="h1">
                         
-                        <%= __('pages').about.topBlock.header %>
+                        <%- __('pages').about.topBlock.header %>
                     </p>
                     <p class="basicXL">
                         <%- __('pages').about.topBlock.description %>

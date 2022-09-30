@@ -151,7 +151,7 @@
                         "Development of Keytom neobank services map",
                         "Development of Keytom payment system"
                     ],
-                    "next": "What's<br />next?"
+                    "next": "What's<br /> next?"
                 }
 			},
 			"ninth": {
@@ -168,7 +168,7 @@
 		},
         "about": {
             "topBlock": {
-                "header": "About the project",
+                "header": "About the&nbsp;project",
                 "description": "Dive into neobank market research and learn about our <span>principles and values</span>",
                 "additionally": "Download PDF"
             }
@@ -225,7 +225,7 @@
         "partnership": {
             "topBlock": {
                 "header": "Partnership",
-                "description": "Looking for cooperation opportunities?<br /><br /><span>We're open</span> for new ideas!",
+                "description": "Looking for cooperation opportunities?<br /><span>We're open</span> for new ideas!",
                 "additionally": "Scroll down to find out more"
             },
             "info": {
