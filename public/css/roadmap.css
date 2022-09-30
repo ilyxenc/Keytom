@@ -1,1 +1,273 @@
-/*# sourceMappingURL=roadmap.css.map */
+@charset "UTF-8";
+.roadmap .roadmapInside {
+  position: relative;
+  padding-top: 180px;
+}
+.roadmap .roadmapInside .keysBlock {
+  position: absolute;
+  width: 100%;
+  height: calc(100% + 314px);
+  max-width: 1170px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  padding: 0;
+  top: 55px;
+  box-sizing: border-box;
+  z-index: 3;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: column;
+}
+@media only screen and (max-width: 668px) {
+  .roadmap .roadmapInside .keysBlock {
+    display: none;
+  }
+}
+.roadmap .roadmapInside .keysBlock .keys {
+  width: 20%;
+  height: 100%;
+  position: relative;
+  background-size: contain;
+  background-repeat: repeat-y;
+}
+.roadmap .roadmapInside .highlightBlock {
+  position: absolute;
+  width: 100%;
+  height: calc(100% + 25px);
+  max-width: 1100px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  padding: 0 10px;
+  top: 91px;
+  box-sizing: border-box;
+  z-index: -1;
+}
+@media only screen and (max-width: 668px) {
+  .roadmap .roadmapInside .highlightBlock {
+    display: none;
+  }
+}
+.roadmap .roadmapInside .highlightBlock .highlight {
+  width: 101px;
+  height: 100%;
+  position: relative;
+}
+.roadmap .roadmapInside .infoBlock {
+  width: 100%;
+  margin: 0 auto 20px;
+  position: relative;
+}
+.roadmap .roadmapInside .infoBlock .bg {
+  position: absolute;
+  z-index: -1;
+  height: 180%;
+  width: 100%;
+  top: -55%;
+  opacity: 0;
+  transition: 0.3s;
+}
+@media only screen and (max-width: 668px) {
+  .roadmap .roadmapInside .infoBlock .bg {
+    height: 170%;
+    top: -50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.roadmap .roadmapInside .infoBlock .info {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+}
+.roadmap .roadmapInside .infoBlock .info .infoInside {
+  width: 75%;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: "a b" "a c" "a d" "a e";
+  grid-column-gap: 15px;
+}
+@media only screen and (max-width: 668px) {
+  .roadmap .roadmapInside .infoBlock .info .infoInside {
+    width: 100%;
+    grid-column-gap: 20px;
+  }
+}
+.roadmap .roadmapInside .infoBlock .info .infoInside .coin {
+  position: absolute;
+  z-index: 10;
+  height: 63px;
+  width: auto;
+  top: 20px;
+  left: 26px;
+  opacity: 0;
+  transition: 0.5s;
+}
+@media only screen and (max-width: 668px) {
+  .roadmap .roadmapInside .infoBlock .info .infoInside .coin {
+    height: 43px;
+  }
+}
+.roadmap .roadmapInside .infoBlock .info .infoInside .decor {
+  width: 102px;
+  height: auto;
+  grid-area: a;
+}
+@media only screen and (max-width: 668px) {
+  .roadmap .roadmapInside .infoBlock .info .infoInside .decor {
+    width: 67px;
+  }
+}
+.roadmap .roadmapInside .infoBlock .info .infoInside .textMedium {
+  color: #26E2E2;
+  grid-area: b;
+  padding-top: 54px;
+}
+@media only screen and (max-width: 668px) {
+  .roadmap .roadmapInside .infoBlock .info .infoInside .textMedium {
+    padding-top: 28px;
+  }
+}
+.roadmap .roadmapInside .infoBlock .info .infoInside .caption3 {
+  color: #BFBDC5;
+  grid-area: c;
+}
+.roadmap .roadmapInside .infoBlock .info .infoInside .text {
+  color: #BFBDC5;
+  grid-area: d;
+}
+.roadmap .roadmapInside .infoBlock .info .infoInside .text ul {
+  padding-left: 25px;
+}
+.roadmap .roadmapInside .infoBlock .info .infoInside .text ul li {
+  color: #BFBDC5;
+  list-style-type: none;
+  position: relative;
+}
+.roadmap .roadmapInside .infoBlock .info .infoInside .text ul li::before {
+  content: "•";
+  position: absolute;
+  left: -17px;
+}
+.roadmap .roadmapInside .infoBlock .info .infoInside .caption3Color {
+  color: #4C4EC1;
+}
+.roadmap .roadmapInside .infoBlock .info .infoInside .textColor {
+  color: #615E68;
+}
+.roadmap .roadmapInside .infoBlockCurrent .bg {
+  opacity: 1;
+}
+.roadmap .roadmapInside .infoBlockCurrent .info .infoInside .coin {
+  opacity: 1;
+  -webkit-animation: soar2 2s ease-in-out infinite;
+          animation: soar2 2s ease-in-out infinite;
+}
+.roadmap .roadmapInside .infoBlockCurrent .info .infoInside .caption3 {
+  color: #4C4EC1;
+}
+.roadmap .roadmapInside .infoBlockCurrent .info .infoInside .text {
+  color: #615E68;
+}
+.roadmap .investor {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  padding: 120px 10px 0;
+  display: flex;
+  gap: 7%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 668px) {
+  .roadmap .investor {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+.roadmap .investor .left {
+  width: 43%;
+}
+@media only screen and (max-width: 668px) {
+  .roadmap .investor .left {
+    width: 100%;
+  }
+}
+.roadmap .investor .left .caption8 {
+  color: #8676D6;
+}
+.roadmap .investor .left .text {
+  color: #615E68;
+  margin: 50px 0 40px;
+}
+@media only screen and (max-width: 668px) {
+  .roadmap .investor .left .text {
+    margin: 45px 0 30px;
+  }
+}
+.roadmap .investor .left .textOpen {
+  font-weight: 500;
+  color: #F8F8FB;
+  background: #6769CB;
+  border-radius: 40px;
+  box-shadow: 4px 4px 16px rgba(150, 148, 255, 0.2), -4px -4px 16px rgba(161, 140, 237, 0.2);
+  max-width: 216px;
+  width: 100%;
+  padding: 9px 20px;
+  box-sizing: border-box;
+  border: none;
+  display: block;
+  text-align: center;
+}
+@media only screen and (max-width: 868px) {
+  .roadmap .investor .left .textOpen {
+    margin: 40px auto 0;
+  }
+}
+.roadmap .investor .right {
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+@media only screen and (max-width: 668px) {
+  .roadmap .investor .right {
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+.roadmap .investor .right .portal {
+  max-width: 650px;
+  width: 115%;
+  height: auto;
+  margin-top: -111%;
+}
+@media only screen and (max-width: 668px) {
+  .roadmap .investor .right .portal {
+    display: none;
+  }
+}
+.roadmap .investor .right .portalMobile {
+  display: none;
+}
+@media only screen and (max-width: 668px) {
+  .roadmap .investor .right .portalMobile {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: -121px;
+    max-width: 350px;
+    z-index: -1;
+  }
+}
+.roadmap .footer {
+  padding: 50px 0 42px;
+}/*# sourceMappingURL=roadmap.css.map */

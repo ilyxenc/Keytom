@@ -1,4 +1,250 @@
 @import colors
 
 .roadmap
-    
+    .roadmapInside
+        position: relative
+        padding-top: 180px
+
+        .keysBlock
+            position: absolute
+            width: 100%
+            height: calc(100% + 314px)
+            max-width: 1170px
+            margin: 0 auto
+            left: 0
+            right: 0
+            padding: 0
+            top: 55px
+            box-sizing: border-box
+            z-index: 3
+            display: flex
+            justify-content: flex-start
+            align-items: flex-end
+            flex-direction: column
+
+            @media only screen and (max-width: 668px)
+                display: none
+
+            .keys
+                width: 20%
+                height: 100%
+                position: relative
+                background-size: contain
+                background-repeat: repeat-y
+
+        .highlightBlock
+            position: absolute
+            width: 100%
+            height: calc(100% + 25px)
+            max-width: 1100px
+            margin: 0 auto
+            left: 0
+            right: 0
+            padding: 0 10px
+            top: 91px
+            box-sizing: border-box
+            z-index: -1
+
+            @media only screen and (max-width: 668px)
+                display: none
+
+            .highlight
+                width: 101px
+                height: 100%
+                position: relative
+
+        // .infoBlockFirst
+        //     padding-top: 180px !important
+
+        .infoBlock
+            width: 100%
+            margin: 0 auto 20px
+            position: relative
+
+            .bg
+                position: absolute
+                z-index: -1
+                height: 180%
+                width: 100%
+                top: -55%
+                opacity: 0
+                transition: 0.3s
+                
+                @media only screen and (max-width: 668px)
+                    height: 170%
+                    top: -50%
+                    object-fit: cover
+
+            .info
+                max-width: 1100px
+                margin: 0 auto
+                padding: 0 10px
+                box-sizing: border-box
+                display: flex
+                justify-content: flex-start
+
+                .infoInside
+                    width: 75%
+                    position: relative
+                    display: grid
+                    grid-template-columns: auto 1fr
+                    grid-template-areas: "a b" "a c" "a d" "a e"
+                    grid-column-gap: 15px
+
+                    @media only screen and (max-width: 668px)
+                        width: 100%
+                        grid-column-gap: 20px
+
+                    .coin
+                        position: absolute
+                        z-index: 10
+                        height: 63px
+                        width: auto
+                        top: 20px
+                        left: 26px
+                        opacity: 0
+                        transition: 0.5s
+
+                        @media only screen and (max-width: 668px)
+                            height: 43px
+
+                    .decor
+                        width: 102px
+                        height: auto
+                        grid-area: a
+
+                        @media only screen and (max-width: 668px)
+                            width: 67px
+
+                    .textMedium
+                        color: $gray1
+                        grid-area: b
+                        padding-top: 54px
+
+                        @media only screen and (max-width: 668px)
+                            padding-top: 28px
+
+                    .caption3
+                        color: $gray6
+                        grid-area: c
+
+                    .text
+                        color: $gray6
+                        grid-area: d
+
+                        ul
+                            padding-left: 25px
+
+                            li
+                                color: $gray6
+                                list-style-type: none
+                                position: relative
+
+                                &::before
+                                    content: "•"
+                                    position: absolute
+                                    left: -17px
+
+                    .caption3Color
+                        color: $main
+
+                    .textColor
+                        color: $text
+
+        .infoBlockCurrent
+            .bg
+                opacity: 1
+
+            .info
+                .infoInside
+                    .coin
+                        opacity: 1
+                        animation: soar2 2s ease-in-out infinite
+
+                    .caption3
+                        color: $main
+
+                    .text
+                        color: $text
+
+    .investor
+        position: relative
+        width: 100%
+        max-width: 1100px
+        padding: 120px 10px 0
+        display: flex
+        gap: 7%
+        margin: 0 auto
+
+        @media only screen and (max-width: 668px)
+            flex-direction: column
+            gap: 0
+
+        .left
+            width: 43%
+
+            @media only screen and (max-width: 668px)
+                width: 100%
+
+            .caption8
+                color: $mainBright8
+
+            .text
+                color: $text
+                margin: 50px 0 40px
+
+                @media only screen and (max-width: 668px)
+                    margin: 45px 0 30px
+
+            .textOpen
+                font-weight: 500
+                color: $gray2
+                background: $menuSticky
+                border-radius: 40px
+                box-shadow: 4px 4px 16px rgba(150, 148, 255, 0.2), -4px -4px 16px rgba(161, 140, 237, 0.2)
+                max-width: 216px
+                width: 100%
+                padding: 9px 20px
+                box-sizing: border-box
+                border: none
+                display: block
+                text-align: center
+
+                @media only screen and (max-width: 868px)
+                    margin: 40px auto 0
+
+        .right
+            width: 50%
+            position: relative
+            display: flex
+            justify-content: flex-start
+            align-items: flex-start
+
+            @media only screen and (max-width: 668px)
+                justify-content: center
+                align-items: flex-start
+                width: 100%
+
+            .portal
+                max-width: 650px
+                width: 115%
+                height: auto
+                margin-top: -111%
+
+                @media only screen and (max-width: 668px)
+                    display: none
+
+            .portalMobile
+                display: none
+
+                @media only screen and (max-width: 668px)
+                    display: block
+                    width: 100%
+                    height: auto
+                    position: relative
+                    margin-top: -121px
+                    max-width: 350px
+                    z-index: -1
+
+    .footer
+        padding: 50px 0 42px

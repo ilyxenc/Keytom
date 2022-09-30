@@ -37,21 +37,223 @@
         <%- include('../parts/menu/pc-sticky.ejs') %>
         <%- include('../parts/menu/mobile-sticky.ejs') %>
 
-        <div style="height:100vh; overflow: scroll; width:100%;scroll-snap-type: y mandatory;">
-            <div style="width: 100%; height: 40vh;scroll-snap-align:center; background-color: yellow;"></div>
-            <div style="width: 100%; height: 40vh;scroll-snap-align:center; background-color: green;"></div>
-            <div style="width: 100%; height: 40vh;scroll-snap-align:center; background-color: blue;"></div>
-            <div style="width: 100%; height: 40vh;scroll-snap-align:center; background-color: red;"></div>
-            <div style="width: 100%; height: 40vh;scroll-snap-align:center; background-color: yellow;"></div>
-            <div style="width: 100%; height: 40vh;scroll-snap-align:center; background-color: green;"></div>
-            <div style="width: 100%; height: 40vh;scroll-snap-align:center; background-color: blue;"></div>
-            <div style="width: 100%; height: 40vh;scroll-snap-align:center; background-color: red;"></div>
-            <div style="width: 100%; height: 40vh;scroll-snap-align:center; background-color: yellow;"></div>
-            <div style="width: 100%; height: 40vh;scroll-snap-align:center; background-color: green;"></div>
-            <div style="width: 100%; height: 40vh;scroll-snap-align:center; background-color: blue;"></div>
-            <div style="width: 100%; height: 40vh;scroll-snap-align:center; background-color: red;"></div>
+        <div class="roadmapInside">
+            <div class="highlightBlock">
+                <img src="<%= link %>static/media/images/roadmap-highlight-left.png" alt="" class="highlight">
+            </div>
+    
+            <div class="keysBlock">
+                <div style="background-image: url('<%= link %>static/media/images/roadmap-keys.png');" class="keys"></div>
+            </div>
+    
+            <div class="infoBlock infoBlockFirst">
+                <img src="<%= link %>static/media/images/roadmap-highlight.png" alt="" class="bg">
+    
+                <div class="info">
+                    <div class="infoInside">
+                        <img src="<%= link %>static/media/images/roadmap-coin.svg" alt="" class="coin">
+                        <img src="<%= link %>static/media/images/roadmap-decor-1.svg" alt="" class="decor">
+            
+                        <p class="textMedium">2019-2021</p>
+                        <p class="caption3">Разработка блокчейн-платформы Keytom</p>
+                        <p class="text">Создана программная платформа для создания промышленных решений на&nbsp;основе технологии распределенного реестра</p>
+                    </div>
+                </div>
+            </div>
+            <div class="infoBlock">
+                <img src="<%= link %>static/media/images/roadmap-highlight.png" alt="" class="bg">
+    
+                <div class="info">
+                    <div class="infoInside">
+                        <img src="<%= link %>static/media/images/roadmap-coin.svg" alt="" class="coin">
+                        <img src="<%= link %>static/media/images/roadmap-decor-1.svg" alt="" class="decor">
+            
+                        <p class="textMedium">Июнь, 2022</p>
+                        <p class="caption3">Анализ рынка необанков </p>
+                        <p class="text">Выявлены основные источники заработка необанков, риски в работе, прогнозы на будущее. Проведены исследования потребностей клиентов необанков из стран Евросоюза с помощью проведения специальных «глубинных» интервью</p>
+                    </div>
+                </div>
+            </div>
+            <div class="infoBlock">
+                <img src="<%= link %>static/media/images/roadmap-highlight.png" alt="" class="bg">
+    
+                <div class="info">
+                    <div class="infoInside">
+                        <img src="<%= link %>static/media/images/roadmap-coin.svg" alt="" class="coin">
+                        <img src="<%= link %>static/media/images/roadmap-decor-1.svg" alt="" class="decor">
+            
+                        <p class="textMedium">Июль, 2022</p>
+                        <p class="caption3">Разработка карты сервисов необанка Keytom </p>
+                        <p class="text">Сервисы, которые требуется разработать в рамках банковского программного обеспечения до выхода на IDO</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="infoBlock">
+                <img src="<%= link %>static/media/images/roadmap-highlight.png" alt="" class="bg">
+                
+                <div class="info">
+                    <div class="infoInside">
+                        <img src="<%= link %>static/media/images/roadmap-coin.svg" alt="" class="coin">
+                        <img src="<%= link %>static/media/images/roadmap-decor-1.svg" alt="" class="decor">
+        
+                        <p class="textMedium">Август - Октябрь, 2022</p>
+                        <p class="caption3">Разработка платежной системы Keytom </p>
+                        <div class="text">Программная платформа на основе блокчейна Keytom в виде промоприложения для инвесторов, которое позволяет:
+                            <ul>
+                                <li>эмитировать KTM Token;</li>
+                                <li>обеспечивать KTM Token крипто-активами, через продажу инвесторам, для этого к сервису подключен web3.0-кошелек Metamask;</li>
+                                <li>обеспечивать трансфер токенов между участниками платформы</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="infoBlock">
+                <img src="<%= link %>static/media/images/roadmap-highlight.png" alt="" class="bg">
+                
+                <div class="info">
+                    <div class="infoInside">
+                        <img src="<%= link %>static/media/images/roadmap-coin.svg" alt="" class="coin">
+                        <img src="<%= link %>static/media/images/roadmap-decor-1.svg" alt="" class="decor">
+        
+                        <p class="textMedium">Сентябрь, 2022 </p>
+                        <p class="caption3">Получение лицензий</p>
+                        <p class="text">Приобретение ряда необходимых лицензий для осуществления банковской деястельности, в том числе интеграция с необанками, платежными системами и системами платежей, криптовалютными биржами и другое</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="infoBlock">
+                <img src="<%= link %>static/media/images/roadmap-highlight.png" alt="" class="bg">
+                
+                <div class="info">
+                    <div class="infoInside">
+                        <img src="<%= link %>static/media/images/roadmap-coin.svg" alt="" class="coin">
+                        <img src="<%= link %>static/media/images/roadmap-decor-1.svg" alt="" class="decor">
+        
+                        <p class="textMedium">Октябрь, 2022  </p>
+                        <p class="caption3">Проведение закрытого Token sale</p>
+                        <p class="text">Закрытая продажа токенов. Привлечение капитала для развития проекта</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="infoBlock">
+                <img src="<%= link %>static/media/images/roadmap-highlight.png" alt="" class="bg">
+                
+                <div class="info">
+                    <div class="infoInside">
+                        <img src="<%= link %>static/media/images/roadmap-coin.svg" alt="" class="coin">
+                        <img src="<%= link %>static/media/images/roadmap-decor-1.svg" alt="" class="decor">
+        
+                        <p class="textMedium">Октябрь 2022 - Июль 2023</p>
+                        <p class="caption3">Разработка программного обеспечения необанка</p>
+                        <div class="text">Разработка таких сервисных решений, как:
+                            <ul>
+                                <li>авторизация (комплаенс);</li>
+                                <li>кастомизация главной страницы;</li>
+                                <li>обмен валют и покупка криптовалют;</li>
+                                <li>управление счётом;</li>
+                                <li>управление кошельками;</li>
+                                <li>управление карточками;</li>
+                                <li>контроль расходов;</li>
+                                <li>функционал одноразовых карточек;</li>
+                                <li>панель администратора.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="infoBlock">
+                <img src="<%= link %>static/media/images/roadmap-highlight.png" alt="" class="bg">
+                
+                <div class="info">
+                    <div class="infoInside">
+                        <img src="<%= link %>static/media/images/roadmap-coin.svg" alt="" class="coin">
+                        <img src="<%= link %>static/media/images/roadmap-decor-1.svg" alt="" class="decor">
+        
+                        <p class="textMedium">Июль-Август, 2023</p>
+                        <p class="caption3">Подготовка к маркетинговым мероприятиям выхода на IDO</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="infoBlock">
+                <img src="<%= link %>static/media/images/roadmap-highlight.png" alt="" class="bg">
+                
+                <div class="info">
+                    <div class="infoInside">
+                        <img src="<%= link %>static/media/images/roadmap-coin.svg" alt="" class="coin">
+                        <img src="<%= link %>static/media/images/roadmap-decor-1.svg" alt="" class="decor">
+        
+                        <p class="textMedium">Сентябрь-Октябрь, 2023</p>
+                        <p class="caption3">Проведение IDO Keytom Neobank</p>
+                    </div>
+                </div>
+            </div>
+    
+            <script>
+                window.addEventListener("scroll", () => {
+                    const blocks = document.querySelectorAll(".infoBlock")
+                    
+                    blocks.forEach((block, id) => {
+                        let screenMiddle = window.scrollY + window.innerHeight / 2
+    
+                        let blockTop = window.innerHeight + block.offsetTop
+    
+                        let blockBottom = window.innerHeight + block.offsetTop + block.offsetHeight
+    
+                        if (
+                            blockTop < screenMiddle && screenMiddle < blockBottom
+                        ) {
+                            blocks.forEach(element => {
+                                element.classList.remove("infoBlockCurrent")
+                            });
+    
+                            block.classList.add("infoBlockCurrent")
+                        }
+    
+                    });
+                })
+            </script>
+        </div>
 
-            <!-- <div class="height: 100%; position: absolute;"></div> -->
+        <div class="investor">
+            <div class="left">
+                <p class="caption8">
+                    Станьте инвестором<br />прямо сейчас
+                </p>
+                <p class="text">
+                    Создайте свой кошелек Keytom, чтобы в числе первых  увидеть возможности платежной системы, выгодно приобрести KTM Token и принять участие в промо-программах
+                </p>
+                <a href="" class="textOpen">
+                    Создать&nbsp;кошелек
+                </a>
+            </div>
+            <div class="right">
+                <img src="<%= link %>static/media/images/roadmap-portal-big.svg" alt="" class="portal">
+
+                <img src="<%= link %>static/media/images/roadmap-portal.png" alt="" class="portalMobile">
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="links">
+                <a href="">
+                    <img src="<%= link %>static/media/images/site.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="<%= link %>static/media/images/mail.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="<%= link %>static/media/images/t.svg" alt="">
+                </a>
+            </div>
+            <p class="textFooter">© Keytom Digital LLC, all rughts reserved, 2022</p>
+            <p class="textFooterSmall">Suite 7, Henville Building<br />Charlestown, Nevis, West Indies</p>
         </div>
     </div>
 
