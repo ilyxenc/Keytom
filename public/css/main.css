@@ -700,4 +700,11 @@ body {
 .footer .textFooterSmall {
   color: #BFBDC5;
   text-align: center;
+}
+
+.link {
+  transition: 0.3s;
+}
+.link:hover {
+  color: #A18CED !important;
 }/*# sourceMappingURL=main.css.map */
