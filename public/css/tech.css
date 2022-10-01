@@ -251,6 +251,10 @@
   display: block;
   text-align: center;
   margin-top: 40px;
+  transition: 0.3s;
+}
+.tech .infoBlock .info8 .infoText .textOpen:hover {
+  background: #4C4EC1;
 }
 @media only screen and (max-width: 868px) {
   .tech .infoBlock .info8 .infoText .textOpen {

@@ -217,7 +217,7 @@
                 <p class="text">
                     <%- __('pages').roadmap.investor.text %>
                 </p>
-                <a href="" class="textOpen">
+                <a href="https://wallet.keytom.io" class="textOpen">
                     <%- __('pages').roadmap.investor.open %>
                 </a>
             </div>
@@ -228,21 +228,7 @@
             </div>
         </div>
 
-        <div class="footer">
-            <div class="links">
-                <a href="">
-                    <img src="<%= link %>static/media/images/site.svg" alt="">
-                </a>
-                <a href="">
-                    <img src="<%= link %>static/media/images/mail.svg" alt="">
-                </a>
-                <a href="">
-                    <img src="<%= link %>static/media/images/t.svg" alt="">
-                </a>
-            </div>
-            <p class="textFooter">© Keytom Digital LLC, all rughts reserved, 2022</p>
-            <p class="textFooterSmall">Suite 7, Henville Building<br />Charlestown, Nevis, West Indies</p>
-        </div>
+        <%- include('../parts/footer') %>
     </div>
 
     <%- include('../parts/bottom') %>

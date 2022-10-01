@@ -120,10 +120,27 @@ const send = async (link) => {
         return;
     }
 
-    const data = {
-        name: form.querySelector("#name").value,
-        email: form.querySelector("#email").value,
-    };
+    const dataRaw = form.querySelectorAll("input, textarea")
+
+    let data = {}
+
+    for (let i = 0; i < dataRaw.length; i++) {
+        let element = dataRaw[i]
+
+        data[element.name] = element.value
+
+        if (element.required && element.value.length == 0) {
+            alert("Not all fields are filled in")
+            return;
+        }
+    }
+
+    console.log(data)
+
+    // const data = {
+    //     name: form.querySelector("#name").value,
+    //     email: form.querySelector("#email").value,
+    // };
 
     const response = await fetch(link, {
         method: 'POST',
@@ -136,8 +153,16 @@ const send = async (link) => {
     const result = await response.json();
 
     if (result.message == "ok") {
-        form.querySelector("#name").value = "";
-        form.querySelector("#email").value = "";
+
+        for (let i = 0; i < dataRaw.length; i++) {
+            let element = dataRaw[i]
+
+            if (element.type == "checkbox") {
+                element.checked = false;
+            } else {
+                element.value = ""   
+            }
+        }
     }
 }
 

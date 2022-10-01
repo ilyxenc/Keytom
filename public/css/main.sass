@@ -220,7 +220,7 @@ body
             span
                 color: $gray1
 
-    .index
+    .index, .tokenomics
         .topBlockText
             max-width: 800px
 
@@ -286,6 +286,11 @@ body
 
         a
             display: block
+
+        .current
+            border: 2px solid $white
+            border-radius: 10px
+            padding: 0px 10px
 
         .open
             padding: 4px 20px
@@ -357,6 +362,9 @@ body
 
 .menuBlockWhite
     background: linear-gradient(180deg, #FCFCFC 37.66%, rgba(252, 252, 252, 0) 100%)
+
+    .current
+        border-color: $menuSticky !important
 
     @media only screen and (max-width: 668px)
         background: transparent
@@ -544,7 +552,7 @@ body
 
         @media only screen and (max-width: 668px)
             margin: 23px auto 10px
-        
+
     .textFooterSmall
         color: $gray6
         text-align: center

@@ -6,7 +6,7 @@
 
     <div class="topBlockMain">
         <div class="videoBlock">
-            <video muted loop playsinline>
+            <video muted playsinline>
                 <!-- loop -->
                 <source src="<%= link %>static/media/video/02.mp4" type="video/mp4">
             </video>
@@ -116,7 +116,7 @@
         </div>
 
         <div class="third">
-            <a href="" class="link"><%- __('pages').index.third.about %> <img src="<%= link %>static/media/images/arrow-left-right.svg" alt=""></a>
+            <a href="<%= link %>about" class="link"><%- __('pages').index.third.about %> <img src="<%= link %>static/media/images/arrow-left-right.svg" alt=""></a>
 
             <p class="caption2">
                 <%- __('pages').index.third.caption %>
@@ -337,7 +337,7 @@
         </script>
 
         <div class="fifth">
-            <a href="" class="link"><%- __('pages').index.fifth.about %> <img src="<%= link %>static/media/images/arrow-left-right.svg" alt=""></a>
+            <a href="<%= link %>partnership" class="link"><%- __('pages').index.fifth.about %> <img src="<%= link %>static/media/images/arrow-left-right.svg" alt=""></a>
 
             <p class="caption2">
                 <%- __('pages').index.fifth.caption %>
@@ -467,7 +467,7 @@
                     <p class="text">
                         <%- __('pages').index.seventh.text %>
                     </p>
-                    <a href="" class="textOpen"><%- __('pages').index.seventh.open %></a>
+                    <a href="https://wallet.keytom.io" class="textOpen"><%- __('pages').index.seventh.open %></a>
                 </div>
             </div>
         </div>
@@ -554,8 +554,8 @@
                     <p class="text">
                         <%- __('pages').index.ninth.text %>
                     </p>
-                    <input type="text" name="name" id="name" class="input" placeholder="<%- __('pages').index.ninth.name %>">
-                    <input type="email" name="email" id="email" class="input" placeholder="Email">
+                    <input type="text" name="name" id="name" class="input" placeholder="<%- __('pages').index.ninth.name %>*" required>
+                    <input type="email" name="email" id="email" class="input" placeholder="Email*" required>
     
                     <div class="checkbox">
                         <input type="checkbox" name="rules" id="rules" required>
@@ -583,21 +583,7 @@
             </div>
         </div>
 
-        <div class="footer">
-            <div class="links">
-                <a href="">
-                    <img src="<%= link %>static/media/images/site.svg" alt="">
-                </a>
-                <a href="">
-                    <img src="<%= link %>static/media/images/mail.svg" alt="">
-                </a>
-                <a href="">
-                    <img src="<%= link %>static/media/images/t.svg" alt="">
-                </a>
-            </div>
-            <p class="textFooter">© Keytom Digital LLC, all rughts reserved, 2022</p>
-            <p class="textFooterSmall">Suite 7, Henville Building<br />Charlestown, Nevis, West Indies</p>
-        </div>
+        <%- include('../parts/footer') %>
     </div>
 
     <%- include('../parts/bottom') %>

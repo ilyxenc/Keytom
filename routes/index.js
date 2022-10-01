@@ -8,5 +8,6 @@ module.exports = (app) => {
   app.get('/tokenomics', pages.tokenomicsGET);
   app.get('/partnership', pages.partnershipGET);
 
-  app.post('/form/subscription', pages.subscriptionPOST);
+  // app.post('/form/subscription', pages.subscriptionPOST);
+  app.post('/form/:page', pages.subscriptionPOST);
 }
