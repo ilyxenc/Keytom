@@ -1,5 +1,7 @@
 const { link } = require('../config');
 
+const { sendLetter } = require('./mail');
+
 const mainGET = (req, res) => {
     res.render('./pages/index', {
         link, current: {
@@ -8,7 +10,7 @@ const mainGET = (req, res) => {
             tech: "",
             tokenomics: "",
             partnership: "",
-        } 
+        }
     });
 }
 
@@ -20,7 +22,7 @@ const aboutGET = (req, res) => {
             tech: "",
             tokenomics: "",
             partnership: "",
-        } 
+        }
     });
 }
 
@@ -32,7 +34,7 @@ const roadmapGET = (req, res) => {
             tech: "",
             tokenomics: "",
             partnership: "",
-        } 
+        }
     });
 }
 
@@ -44,7 +46,7 @@ const techGET = (req, res) => {
             tech: "current",
             tokenomics: "",
             partnership: "",
-        } 
+        }
     });
 }
 
@@ -56,7 +58,7 @@ const tokenomicsGET = (req, res) => {
             tech: "",
             tokenomics: "current",
             partnership: "",
-        } 
+        }
     });
 }
 
@@ -68,14 +70,21 @@ const partnershipGET = (req, res) => {
             tech: "",
             tokenomics: "",
             partnership: "current",
-        } 
+        }
     });
 }
 
 const subscriptionPOST = (req, res) => {
-    console.log(req.body, req.params.page)
+    const data = req.body
+    delete data.rules
 
-    res.send(JSON.stringify({message: "ok"}))
+    const subject = req.params.page
+
+    let text = `The message came from <a href="http://95.163.242.213/${subject}">"${subject}"</a> page<br />Data about client: ${JSON.stringify(data)}`
+
+    sendLetter(text, subject)
+
+    res.send(JSON.stringify({ message: "ok" }))
 }
 
 module.exports = {

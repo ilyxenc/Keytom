@@ -135,13 +135,6 @@ const send = async (link) => {
         }
     }
 
-    console.log(data)
-
-    // const data = {
-    //     name: form.querySelector("#name").value,
-    //     email: form.querySelector("#email").value,
-    // };
-
     const response = await fetch(link, {
         method: 'POST',
         headers: {
@@ -153,7 +146,6 @@ const send = async (link) => {
     const result = await response.json();
 
     if (result.message == "ok") {
-
         for (let i = 0; i < dataRaw.length; i++) {
             let element = dataRaw[i]
 
