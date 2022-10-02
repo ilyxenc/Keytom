@@ -81,7 +81,9 @@ const subscriptionPOST = async (req, res) => {
     const subject = req.params.page
     const to = (subject == "partnership") ? "office@keytom.io" : "hello@keytom.io"
 
-    let text = `The message came from <a href="http://95.163.242.213/${subject}">"${subject}"</a> page<br />Data about client: ${JSON.stringify(data)}`
+    console.log(to)
+
+    let text = `The message came from <a href="${link}${subject}">"${subject}"</a> page<br />Data about client: ${JSON.stringify(data)}`
 
     try {
         await sendLetter(text, subject, to)
