@@ -74,17 +74,23 @@ const partnershipGET = (req, res) => {
     });
 }
 
-const subscriptionPOST = (req, res) => {
+const subscriptionPOST = async (req, res) => {
     const data = req.body
     delete data.rules
 
     const subject = req.params.page
+    const to = (subject == "partnership") ? "office@keytom.io" : "hello@keytom.io"
 
     let text = `The message came from <a href="http://95.163.242.213/${subject}">"${subject}"</a> page<br />Data about client: ${JSON.stringify(data)}`
 
-    sendLetter(text, subject)
+    try {
+        await sendLetter(text, subject, to)
 
-    res.send(JSON.stringify({ message: "ok" }))
+        res.send(JSON.stringify({ message: "ok" }))
+    } catch (err) {
+        console.log(err)
+        res.send(JSON.stringify({ message: "error" }))
+    }
 }
 
 module.exports = {

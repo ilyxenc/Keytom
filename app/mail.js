@@ -1,27 +1,11 @@
 const nodemailer = require('nodemailer');
 
-const transporter = nodemailer.createTransport({
-    host: '',
-    port: 0,
-    secure: false,
-    auth: {
-        user: '',
-        pass: ''
-    }
-});
-
-const sendLetter = (data, subject) => {
-    transporter.sendMail({
-        from: '', // почта, указанная выше
-        to: '', // список через запятую, кому необходимо отправить письмо
-        subject, // тема письма
+const sendLetter = (data, subject, to) => {
+    return transporter.sendMail({
+        from: 'hello@keytom.io',
+        to,
+        subject,
         html: data,
-    }, (err, info) => {
-        if (err) {
-            console.log(err);
-        } else {
-            console.log(info);
-        }
     });
 }
 
