@@ -155,6 +155,8 @@ const send = async (link) => {
                 element.value = ""   
             }
         }
+    } else {
+        alert("Something went wrong, try again later");
     }
 }
 
