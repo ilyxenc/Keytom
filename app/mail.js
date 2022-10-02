@@ -2,13 +2,12 @@ const nodemailer = require('nodemailer');
 
 const transporter = nodemailer.createTransport({
     host: '',
-    port: '',
-    secure: true,
+    port: 0,
+    secure: false,
     auth: {
         user: '',
         pass: ''
     }
-
 });
 
 const sendLetter = (data, subject) => {
