@@ -86,7 +86,9 @@ const subscriptionPOST = async (req, res) => {
     let text = `The message came from <a href="${link}${subject}">"${subject}"</a> page<br />Data about client: ${JSON.stringify(data)}`
 
     try {
-        await sendLetter(text, subject, to)
+        const result = await sendLetter(text, subject, to)
+
+        console.log(result)
 
         res.send(JSON.stringify({ message: "ok" }))
     } catch (err) {
