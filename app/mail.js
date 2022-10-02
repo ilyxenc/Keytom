@@ -2,7 +2,7 @@ const nodemailer = require('nodemailer');
 
 const sendLetter = (data, subject, to) => {
     return transporter.sendMail({
-        from: 'hello@keytom.io',
+        from: to,
         to,
         subject,
         html: data,
