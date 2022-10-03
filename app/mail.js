@@ -3,6 +3,7 @@ const nodemailer = require('nodemailer');
 require('dotenv').config()
 
 const helloParams = JSON.parse(process.env.helloParams)
+
 const officeParams = JSON.parse(process.env.officeParams)
 
 const sendLetter = (data, subject, to) => {
