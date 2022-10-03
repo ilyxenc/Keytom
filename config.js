@@ -1,6 +1,6 @@
-// const link = "http://95.163.242.213/"
+require('dotenv').config()
 
-const link = "http://localhost:3000/"
+const link = process.env.link
 
 module.exports = {
     link
