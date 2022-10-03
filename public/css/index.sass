@@ -4,6 +4,9 @@
     .link
         color: $main
 
+        @media only screen and (max-width: 668px)
+            font-size: 14px
+
     .caption1, .caption2, .caption5
         color: $main
 
@@ -217,6 +220,7 @@
             min-height: 466px
             box-shadow: 0px 0px 1px rgba(65, 35, 148, 0.1), 4px 4px 20px rgba(65, 35, 148, 0.08), -4px -4px 20px rgba(65, 35, 148, 0.08)
             border-radius: 12px
+            height: auto
 
             // @media only screen and (max-width: 1100px)
             //     width: 200px
@@ -724,6 +728,7 @@
 
                 &:hover
                     img
+                        opacity: 0.7
                         box-shadow: 0px 0px 1px rgba(65, 35, 148, 0.2), 4px 4px 20px rgba(65, 35, 148, 0.16), -4px -4px 20px rgba(65, 35, 148, 0.16)
 
                 @media only screen and (min-width: 1441px)
@@ -772,12 +777,12 @@
         width: 100%
         max-width: 1100px
         overflow: unset
-        padding: 245px 10px 50px
+        padding: 245px 10px 0
         box-sizing: border-box
         margin: 0 auto
 
         @media only screen and (max-width: 668px)
-            padding: 0 10px 50px
+            padding: 0 10px 0
 
         .caption2
             margin: 10px 0 56px
@@ -906,3 +911,6 @@
                     @media only screen and (max-width: 668px)
                         display: block
                         margin: 28px auto 15px
+
+    .footer
+        padding-top: 50px
