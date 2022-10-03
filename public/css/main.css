@@ -715,4 +715,29 @@ body {
 }
 .link:hover {
   color: #A18CED !important;
+}
+
+@key;
+.modalBlock {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(76, 78, 193, 0.5215686275);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation: show 0.3s ease-in-out forwards;
+          animation: show 0.3s ease-in-out forwards;
+}
+.modalBlock .modal {
+  padding: 18px 36px;
+  background: #FFFFFF;
+  border-radius: 40px;
+}
+.modalBlock .modal .text {
+  color: #615E68;
 }/*# sourceMappingURL=main.css.map */

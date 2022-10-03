@@ -155,6 +155,14 @@ const send = async (link) => {
                 element.value = ""   
             }
         }
+
+        const modal = document.querySelector(".modalBlock")
+
+        modal.classList.remove("notDisplayed")
+
+        setTimeout(() => {
+            modal.classList.add("notDisplayed")
+        }, 2500);
     } else {
         alert("Something went wrong, try again later");
     }

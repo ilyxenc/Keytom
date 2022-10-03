@@ -1,4 +1,7 @@
 {
+	"modal": {
+		"send": "Форма успешно отправлена"
+	},
 	"toggleLang": {
 		"short": {
 			"curr": "RU",
