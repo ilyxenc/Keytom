@@ -18,13 +18,13 @@
             <div class="topBlockText">
                 <div>
                     <p class="h1">
-                        <%= __('pages').index.topBlock.header %>
+                        <%- __('pages').index.topBlock.header %>
                     </p>
                     <p class="basicXL">
                         <%- __('pages').index.topBlock.description %>
                     </p>
                     <a class="basicMS" onclick="scrollToElement('next')">
-                        <%= __('pages').index.topBlock.additionally %>
+                        <%- __('pages').index.topBlock.additionally %>
                         <img src="<%= link %>static/media/images/arrow-top-down.svg" alt="">
                     </a>
                 </div>
@@ -40,7 +40,7 @@
 
         <div class="first">
             <div class="left">
-                <a href="<%= link %>about" class="link"><%- __('pages').index.first.about %> <img src="<%= link %>static/media/images/arrow-left-right.svg" alt=""></a>
+                <a href="<%= link %>about" class="link"><%- __('pages').index.first.about %>&nbsp;<img src="<%= link %>static/media/images/arrow-left-right.svg" alt=""></a>
 
                 <p class="caption1">
                     <%- __('pages').index.first.caption %>

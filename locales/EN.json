@@ -13,19 +13,19 @@
 		}
 	},
 	"menu": {
-		"about": "About the Project",
-		"roadmap": "Road map",
+		"about": "About&nbsp;the&nbsp;Project",
+		"roadmap": "Road&nbsp;map",
 		"tech": "Technologies",
 		"tokenomics": "Tokenomics",
 		"partners": "Partnership",
-		"open": "Open Wallet"
+		"open": "Open&nbsp;Wallet"
 	},
 	"pages": {
 		"index": {
 			"topBlock": {
 				"header": "Keytom",
 				"description": "<span>A new generation</span> digital bank for working with cryptocurrencies and electronic fiat money",
-				"additionally": "Scroll down to find out more"
+				"additionally": "Scroll&nbsp;down&nbsp;to&nbsp;find&nbsp;out&nbsp;more"
 			},
 			"first": {
 				"about": "More about the project",
@@ -180,7 +180,7 @@
             "topBlock": {
                 "header": "Road map",
                 "description": "Our team has put in a lot of effort and we still have a lot to do. Find out about our current successes and <span>plans for the future</span>",
-                "additionally": "Scroll down to find out more"
+                "additionally": "Scroll&nbsp;down&nbsp;to&nbsp;find&nbsp;out&nbsp;more"
             },
 			"info": {
 				"date": [
@@ -225,7 +225,7 @@
             "topBlock": {
                 "header": "Technology",
                 "description": "Technology has changed and affected every aspect of our lives: the way we connect and communicate with each other, learn and teach others, work, do business and relax – the way we <span>shape our society</span>.",
-                "additionally": "Scroll down to find out more"
+                "additionally": "Scroll&nbsp;down&nbsp;to&nbsp;find&nbsp;out&nbsp;more"
             },
 			"info": [
 				{
@@ -267,7 +267,7 @@
             "topBlock": {
                 "header": "Partnership",
                 "description": "Looking for cooperation opportunities?<br /><span>We're open</span> for new ideas!",
-                "additionally": "Scroll down to find out more"
+                "additionally": "Scroll&nbsp;down&nbsp;to&nbsp;find&nbsp;out&nbsp;more"
             },
             "info": {
                 "caption": "Cooperation<br />& partnership",

@@ -5,36 +5,36 @@
 
     <div class="links">
         <a href="<%= link %>" class="basicM">
-            <%= __('menu').main %>
+            <%- __('menu').main %>
         </a>
         <a href="<%= link %>about" class="basicM">
-            <%= __('menu').about %>
+            <%- __('menu').about %>
         </a>
         <a href="<%= link %>roadmap" class="basicM">
-            <%= __('menu').roadmap %>
+            <%- __('menu').roadmap %>
         </a>
         <a href="<%= link %>tech" class="basicM">
-            <%= __('menu').tech %>
+            <%- __('menu').tech %>
         </a>
         <a href="<%= link %>tokenomics" class="basicM">
-            <%= __('menu').tokenomics %>
+            <%- __('menu').tokenomics %>
         </a>
         <a href="<%= link %>partnership" class="basicM">
-            <%= __('menu').partners %>
+            <%- __('menu').partners %>
         </a>
 
         <div class="langToggle">
             <span class="basicM lang" data-lang="<%= __('toggleLang').short.curr %>" onclick="langToggle(this)">
-                <%= __('toggleLang').long.curr %> <img src="<%= link %>static/media/images/arrow-top-down.svg" alt="">
+                <%- __('toggleLang').long.curr %> <img src="<%= link %>static/media/images/arrow-top-down.svg" alt="">
             </span>
             <span class="basicM secondLang notDisplayed" data-lang="<%= __('toggleLang').short.next %>"
                 onclick="langToggle(this)">
-                <%= __('toggleLang').long.next %>
+                <%- __('toggleLang').long.next %>
             </span>
         </div>
 
         <a href="https://wallet.keytom.io" class="basicM open">
-            <%= __('menu').open %>
+            <%- __('menu').open %>
         </a>
     </div>
 
@@ -60,5 +60,5 @@
 </div>
 
 <a href="https://wallet.keytom.io" class="basicXSS mobileOpen">
-    <%= __('menu').open %>
+    <%- __('menu').open %>
 </a>
