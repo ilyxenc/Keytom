@@ -1,24 +1,9 @@
 const nodemailer = require('nodemailer');
 
-const helloParams = {
-    host: 'smtp.gmail.com',
-    port: 587,
-    secure: false,
-    auth: {
-        user: 'hello@keytom.io',
-        pass: 'qgsodqesrcjniqsp'
-    }
-}
+require('dotenv').config()
 
-const officeParams = {
-    host: 'smtp.gmail.com',
-    port: 587,
-    secure: false,
-    auth: {
-        user: 'office@keytom.io',
-        pass: 'okahwlcmeijyacvo'
-    }
-}
+const helloParams = JSON.parse(process.env.helloParams)
+const officeParams = JSON.parse(process.env.officeParams)
 
 const sendLetter = (data, subject, to) => {
 
