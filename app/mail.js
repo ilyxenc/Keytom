@@ -13,7 +13,7 @@ const sendLetter = (data, subject, to) => {
 
     return transporter.sendMail({
         from: to,
-        to: 'ilya.goldobin1@gmail.com',
+        to,
         subject,
         html: data,
     });
