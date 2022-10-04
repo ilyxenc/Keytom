@@ -113,10 +113,24 @@ const preloader = () => {
     topBlockText.classList.add("fadeInUp");
 }
 
+const validateEmail = (email) => {
+    const validRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+    if (email.match(validRegex)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 const send = async (link) => {
     const form = document.querySelector(".form");
 
     if (form.querySelector("#rules").checked == false) {
+        return;
+    }
+
+    if (!validateEmail(form.querySelector("#email").value)) {
         return;
     }
 
@@ -152,7 +166,7 @@ const send = async (link) => {
             if (element.type == "checkbox") {
                 element.checked = false;
             } else {
-                element.value = ""   
+                element.value = ""
             }
         }
 
