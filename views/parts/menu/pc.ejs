@@ -5,7 +5,7 @@
 
     <div class="links">
         <%- include('./links') %>
-        <a href="https://wallet.keytom.io" class="basicSM open"><%- __('menu').open %></a>
+        <a href="https://wallet.keytom.io" target="_blank" class="basicSM open"><%- __('menu').open %></a>
         <div class="langToggle">
             <span class="basicSM lang" data-lang="<%- __('toggleLang').short.curr %>" onclick="langToggle(this)"><%- __('toggleLang').short.curr %> <img src="<%= link %>static/media/images/arrow-top-down.svg" alt=""></span>
             <span class="basicSM secondLang notDisplayed" data-lang="<%- __('toggleLang').short.next %>" onclick="langToggle(this)"><%- __('toggleLang').short.next %></span>

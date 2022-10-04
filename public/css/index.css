@@ -275,7 +275,7 @@
   position: absolute;
   left: calc(-1 * (100vw - 1000px) / 2);
   top: -16px;
-  height: 528px;
+  height: 100%;
   width: 24vw;
   background: linear-gradient(90deg, #FCFCFC 40%, rgba(252, 252, 252, 0) 95%);
   z-index: 996;
@@ -844,10 +844,10 @@
   display: flex;
   flex-direction: column;
   gap: 1vw;
+  cursor: pointer;
 }
 .index .eighthBlock .roadmap .button:hover img {
-  opacity: 0.7;
-  box-shadow: 0px 0px 1px rgba(65, 35, 148, 0.2), 4px 4px 20px rgba(65, 35, 148, 0.16), -4px -4px 20px rgba(65, 35, 148, 0.16);
+  box-shadow: 4px 4px 16px rgba(255, 255, 255, 0.3), -4px -4px 16px rgba(255, 255, 255, 0.3);
 }
 @media only screen and (min-width: 1441px) {
   .index .eighthBlock .roadmap .button {
