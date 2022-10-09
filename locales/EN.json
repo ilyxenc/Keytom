@@ -110,7 +110,6 @@
 				"about": "We are always open for new partners",
 				"caption": "Licenses and integrations",
 				"companies": [
-					"Licenses and integrations",
 					"Advance approval",
 					"MSB license: payments, currency exchange, cryptocurrency transactions",
 					"Own funding. Client payments",
@@ -173,7 +172,8 @@
             "topBlock": {
                 "header": "About the&nbsp;project",
                 "description": "Dive into neobank market research and learn about our <span>principles and values</span>",
-                "additionally": "Download PDF"
+                "additionally": "Download PDF",
+				"link": "WhitePaper-ru.pdf"
             }
         },
         "roadmap": {
@@ -242,7 +242,7 @@
                     "text": "High degree of data security with the support of cryptographic functions using RSA 4096 algorithms (key length change is optional). Possibility of integration with certified information security tools. Hashing of transactions and blocks is implemented using a family of second-generation cryptographic algorithms (SHA-2) with a configurable key length of 256 or 512 bytes. If necessary, the transmitted blocks can be additionally encrypted using state standard encryption or OpenSSL"
                 }, {
                     "caption": "Configurability",
-                    "text": "Keytom codes are highly customizable. One example could be a transaction fee for the transfer of crypto assets between users, which can be set by each operator at its discretion: it can be a constant percentage of the amount (as in acquiring), or it may be a floating (variable in value) percentage of the amount sent in monetary terms, or it may be a zero commission, in case when the network operator's earnings lie in the provision of other services.<br /><br />In the Keytom network, users themselves decide which node (which operator) to connect to and thereby vote with their money who to be served by, thus, operators need to constantly maintain the level of service, improve services and build customer-oriented transaction costs"
+                    "text": "Keytom nodes are highly customizable. One example could be a transaction fee for the transfer of crypto assets between users, which can be set by each operator at its discretion: it can be a constant percentage of the amount (as in acquiring), or it may be a floating (variable in value) percentage of the amount sent in monetary terms, or it may be a zero commission, in case when the network operator's earnings lie in the provision of other services.<br /><br />In the Keytom network, users themselves decide which node (which operator) to connect to and thereby vote with their money who to be served by, thus, operators need to constantly maintain the level of service, improve services and build customer-oriented transaction costs"
                 }, {
                     "caption": "Multicurrency",
                     "text": "Keytom supports multicurrency payments and currency conversion. Within the network, participants can exchange currencies using the service of a trusted issuer. This is one or several network participants that provide the transfer of one currency to another.<br /><br />By integrating blockchain nodes with coins (Btc, Eth, Zcash, Bch and others) or integrating with a bank via API, it is possible to exchange coins, tokens and fiat money"

@@ -210,7 +210,7 @@
   cursor: pointer;
 }
 .partnership .first .form .textOpen:hover {
-  background: #AEAEAE;
+  background: #26E2E2;
 }
 @media only screen and (max-width: 668px) {
   .partnership .first .form .textOpen {

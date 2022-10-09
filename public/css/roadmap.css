@@ -224,6 +224,10 @@
   border: none;
   display: block;
   text-align: center;
+  transition: 0.3s;
+}
+.roadmap .investor .left .textOpen:hover {
+  background: #4C4EC1;
 }
 @media only screen and (max-width: 868px) {
   .roadmap .investor .left .textOpen {
